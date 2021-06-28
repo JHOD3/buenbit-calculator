@@ -1,0 +1,74 @@
+// Your custom styles
+@for $i from 8 through 80 {
+    .font-#{$i} {
+      font-size: $i + px !important;
+    }
+}
+body{
+    font-size: 1rem;
+    color:#211748;
+    background: white;
+}
+
+.section-home-mt{
+    margin-top: 130px;
+}
+.footer-blue-rounded{
+    height: 170px;
+    border-color: #0865fb transparent transparent transparent;
+    border-radius: 50%/150px 150px 0 0;
+    background-color: #0865fb !important;
+}
+
+.btn-info:not([disabled]):not(.disabled):active, .btn-info:not([disabled]):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+    background-color: #0865fb !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-info {
+    color: #0865fb;
+    background-color: #DAE6F5 !important;
+}
+.btn-info:hover {
+    color: #0865fb;
+    background-color: #eef4fa;
+}
+.btn-info:active {
+    color: #0865fb;
+    background-color: #eef4fa;
+}
+.footer-gracias{
+    margin-top: -72px;
+}
+@media (min-width: 768px){
+    .footer-blue-rounded-alto-a{
+        position: absolute;
+        width: 100%;
+        height: 8rem;
+        z-index: -1;
+    }
+    .footer-blue-rounded-alto{
+        width: 100%;
+        height: 71rem;
+        z-index: -1;
+    }
+}
+@media (max-width: 768px){
+    .footer-blue-rounded {
+        height: 124px;
+        border-color: #0865fb transparent transparent transparent;
+        border-radius: 76%/100px 100px 0 0;
+        background-color: #0865fb !important;
+    }
+    .section-home-mt {
+        margin-top: 60px;
+    }
+    .img-gracias{
+        width: 230px;
+    }
+    @for $i from 8 through 80 {
+        .font-#{$i}-m {
+            font-size: $i + px !important;
+        }
+    }
+}

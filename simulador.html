@@ -1,0 +1,188 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Buenbit || Calculadora</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- Bootstrap slider rang-->
+    <link rel="stylesheet" href="css/bootstrap-slider.css"/>
+    <!-- Material Design Bootstrap-->
+    <link rel="stylesheet" href="css/buenbit.css"/>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar-->
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav bg-white">
+        <div class="container col-md-10">
+          <!-- SideNav slide-out button-->
+          <div class="float-left d-md-none d-block"><a><img src="img/logo-buenbit-d.svg"/></a>
+            <!--
+            a.button-collapse.black-text(href='#' data-activates='slide-out')
+                i.fas.fa-bars
+            -->
+          </div>
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-dn mr-auto"><a><img src="img/logo-buenbit-d.svg"/></a></div>
+          <!-- Navbar links-->
+          <ul class="nav navbar-nav nav-flex-icons ml-auto d-md-flex d-none">
+            <li class="nav-item align-items-center d-flex"><a class="nav-link text-primary font-weight-normal"><span class="clearfix d-none d-sm-inline-block">Descargá la app</span></a></li>
+            <li class="nav-item mx-md-3"><a class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a></li>
+            <li class="nav-item"><a class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Ingresar</span></a></li>
+          </ul>
+          <!-- Navbar links-->
+        </div>
+      </nav>
+      <!-- Navbar-->
+    </header>
+    <main>
+      <div class="container-fluid">
+        <section class="section-home-mt container col-md-10 mx-auto px-0">
+          <div class="row col-md-8 mx-auto pt-5 px-0">
+            <div class="mx-md-auto mb-4">
+              <h1>Simulador de crédito</h1>
+            </div>
+            <div class="card py-md-5 pt-5 pb-4 col-md-12 px-0">
+              <p class="text-center">¿Cuántos pesos necesitás?</p>
+              <div class="d-flex align-items-center">
+                <div class="col-md-3 text-right"><small class="text-primary">ARG</small></div>
+                <div class="col-md-6 justify-content-center d-flex"><span class="amount font-30">10.000</span></div>
+                <div class="col-md-3"></div>
+              </div>
+              <div class="justify-content-center d-flex my-3 border-bottom pb-5">
+                <div class="col-md-8 mx-md-auto">
+                  <input id="ex13" type="text"/>
+                </div>
+              </div>
+              <div>
+                <div class="border-bottom pb-5">
+                  <p class="text-center mt-3">Plazo en meses</p>
+                  <div class="justify-content-center d-flex">
+                    <div data-toggle="buttons">
+                      <label class="btn btn-info btn-rounded px-4 font-20">
+                        <input id="option1" type="radio" name="options" autocomplete="off" checked=""/> 3
+                      </label>
+                      <label class="btn btn-info active btn-rounded px-4 font-20">
+                        <input id="option2" type="radio" name="options" autocomplete="off"/> 6
+                      </label>
+                      <label class="btn btn-info btn-rounded px-4 font-20">
+                        <input id="option3" type="radio" name="options" autocomplete="off"/> 12
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="border-bottom pb-5">
+                  <p class="text-center mt-5">Valor del préstamos sobre garantía</p>
+                  <div class="justify-content-center d-flex">
+                    <div data-toggle="buttons">
+                      <label class="btn btn-info btn-rounded px-4 font-20 py-md-2">
+                        <input id="option1" type="radio" name="options" autocomplete="off" checked=""/> 25%
+                      </label>
+                      <label class="btn btn-info active btn-rounded px-4 font-20 py-md-2">
+                        <input id="option2" type="radio" name="options" autocomplete="off"/> 50%
+                      </label>
+                      <label class="btn btn-info btn-rounded px-4 font-20 py-md-2">
+                        <input id="option3" type="radio" name="options" autocomplete="off"/> 75%
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="pb-5">
+                  <p class="text-center mt-5">Garantía necesaria</p>
+                  <div class="justify-content-center d-flex">
+                    <div>
+                      <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto"><small class="text-primary mr-md-3">DAI</small><span class="font-30 text-primary">1.500</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary py-md-4">
+                <table>
+                  <tr>
+                    <td>CTF:</td>
+                    <td class="font-weight-bold">25%</td>
+                  </tr>
+                  <tr style="height: 50px;">
+                    <td>Cuota mensual:</td>
+                    <td class="font-weight-bold">$250</td>
+                  </tr>
+                  <tr>
+                    <td>Interés total a pagar:</td>
+                    <td class="font-weight-bold">$270</td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <div class="pb-md-1">
+                  <p class="text-center mt-5">Datos personales</p>
+                  <div class="justify-content-center d-flex">
+                    <form class="col-md-10">
+                      <div class="md-form md-outline">
+                        <input class="form-control validate mb-md-1 mb-0" id="form81" type="text" placeholder="Nombre y apellido"/>
+                      </div>
+                      <div class="md-form md-outline">
+                        <input class="form-control validate" id="form82" type="email" placeholder="Email"/>
+                      </div>
+                      <button class="btn btn-primary btn-md btn-rounded mt-2 mx-auto font-12 col-12">Simular préstramos</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid pt-md-4 py-5 justify-content-center d-none d-md-flex"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="page-footer pt-md-4 mt-5 footer-blue-rounded-alto-a">
+      <!-- Copyright-->
+      <div class="footer-copyright py-3 text-center footer-blue-rounded footer-blue-rounded-alto">
+        <div class="container-fluid pt-md-4 pt-4 d-md-none d-block"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
+      </div>
+      <!-- Copyright-->
+    </footer>
+    <!-- Footer-->
+    <!-- JQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips-->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- Bootstrap slider rang JavaScript-->
+    <script type="text/javascript" src="js/bootstrap-slider.js"></script>
+    <!-- MDB core JavaScript-->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- Custom scripts-->
+    <script>
+      // Without JQuery
+      var slider = new Slider("#ex13", {
+          ticks: ['1000', '5000', '10000', '15000', '20000'],
+          ticks_labels: ['|', '|', '|', '|', '|'],
+          ticks_snap_bounds:1,
+          tooltip_position:'bottom',
+          formatter: function (num) {
+              num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+              num = num.split('').reverse().join('').replace(/^[\.]/, '');
+              return '$' + num;
+          },
+      });
+      
+      $('#ex13').on('change',function (e) {
+          e.preventDefault();
+          let num = $(this).val();
+          num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+          num = num.split('').reverse().join('').replace(/^[\.]/, '');
+          $('.amount').text(num);
+      })
+    </script>
+  </body>
+</html>

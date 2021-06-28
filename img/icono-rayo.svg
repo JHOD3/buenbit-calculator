@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaf0f8;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #0865fa;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_303" data-name="Grupo 303" transform="translate(-121 -510)">
+    <circle id="Elipse_7" data-name="Elipse 7" class="cls-1" cx="25.5" cy="25.5" r="25.5" transform="translate(121 510)"/>
+    <g id="Grupo_34" data-name="Grupo 34" transform="translate(536.266 -353.268)">
+      <g id="Grupo_33" data-name="Grupo 33" transform="translate(-398.916 873)">
+        <path id="Trazado_91" data-name="Trazado 91" class="cls-2" d="M-380.779,885.665a1.012,1.012,0,0,0-.852-.464h-7.117V874.017a1.016,1.016,0,0,0-.805-.995,1.012,1.012,0,0,0-1.141.581l-8.134,18.3a1.014,1.014,0,0,0,.077.966,1.016,1.016,0,0,0,.852.464h7.117V904.52a1.016,1.016,0,0,0,.805.994,1.1,1.1,0,0,0,.212.022,1.018,1.018,0,0,0,.929-.6l8.134-18.3A1.014,1.014,0,0,0-380.779,885.665Z" transform="translate(398.916 -873)"/>
+      </g>
+    </g>
+  </g>
+</svg>

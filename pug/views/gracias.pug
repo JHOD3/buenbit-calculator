@@ -1,0 +1,20 @@
+extends ../layouts/_layout
+block variables
+    - var title='Buenbit || Gracias'
+block footer
+    include ../components/_footer2
+block content
+    section.section-home-mt.container.col-10.mx-auto.px-0
+        .row.col-md-11.mx-md-auto.pt-5.px-0
+            div.mx-md-auto.mb-4
+                h1.font-35-m ¡Muchas gracias!
+            div.row.align-items-center.d-md-flex
+                div.col-md-5.order-md-1.order-2
+                    img(src="img/gracias.svg").img-gracias.mx-auto.d-block
+                div.col-md-1.order-md-2.order-3
+                div.col-md-5.order-md-3.order-1
+                    div.font-30.font-weight-bold.text-primary Solicitud <br> enviada
+                    p   Gracias por completar la solicitud. <br>
+                        |Nuestro equipo realizará la evaluación correspondiente
+                        |y se pondrá en contacto a la brevedad.
+
