@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title>Buenbit || Gracias</title>
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
     <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <!-- Bootstrap slider rang-->
@@ -63,9 +63,9 @@
     </main>
     <!-- Footer-->
     <footer class="page-footer pt-4 footer-gracias">
-      <!-- Copyright-->
-      <div class="footer-copyright py-3 text-center footer-blue-rounded">
-        <div class="container-fluid pt-md-4 py-5"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
+      <!-- Copyright--><img class="img-background z-index-1 d-md-block d-none" src="img/curva-d-p.svg"/><img class="img-background z-index-1 d-md-none d-block" src="img/curva-m-p.svg"/>
+      <div class="py-3 text-center">
+        <div class="container-fluid pt-md-5 pt-5"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
       </div>
       <!-- Copyright-->
     </footer>
@@ -80,28 +80,7 @@
     <script type="text/javascript" src="js/bootstrap-slider.js"></script>
     <!-- MDB core JavaScript-->
     <script type="text/javascript" src="js/mdb.js"></script>
-    <!-- Custom scripts-->
-    <script>
-      // Without JQuery
-      var slider = new Slider("#ex13", {
-          ticks: ['1000', '5000', '10000', '15000', '20000'],
-          ticks_labels: ['|', '|', '|', '|', '|'],
-          ticks_snap_bounds:1,
-          tooltip_position:'bottom',
-          formatter: function (num) {
-              num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-              num = num.split('').reverse().join('').replace(/^[\.]/, '');
-              return '$' + num;
-          },
-      });
-      
-      $('#ex13').on('change',function (e) {
-          e.preventDefault();
-          let num = $(this).val();
-          num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-          num = num.split('').reverse().join('').replace(/^[\.]/, '');
-          $('.amount').text(num);
-      })
-    </script>
+    <!-- Script-->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title>Buenbit || Calculadora</title>
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
     <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <!-- Bootstrap slider rang-->
@@ -60,28 +60,36 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 d-md-block d-none order-md-2 order-2">
+            <div class="col-md-2 d-md-block d-none order-md-2 order-2 px-md-0">
               <embed src="img/persona-1.svg"/>
             </div>
-            <div class="col-md-4 pt-5 order-md-3 order-1">
+            <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
                 <h1>Usá tus Dai para <br> pedir un préstamos</h1>
                 <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
               </div>
-              <div class="card py-5">
+              <div class="card pt-5 ml-md-4 col-md-11 px-md-0">
                 <p class="text-center">¿Cuántos pesos necesitás?</p>
                 <div class="d-flex align-items-center">
-                  <div class="col-md-3 text-right"><small class="text-primary">ARG</small></div>
-                  <div class="col-md-6 justify-content-center d-flex"><span class="amount font-30">10.000</span></div>
-                  <div class="col-md-3"></div>
+                  <div class="col-md-3 text-right"><small>ARG</small></div>
+                  <div class="col-md-6">
+                    <div class="text-center align-items-center font-35 justify-content-center set_amount">$<span class="amount">5.000</span></div>
+                    <div class="md-form">
+                      <input class="form-control mb-md-1 mb-0 set_amount numberico" id="amount_input_set" type="number" style="display:none;" placeholder="Monto" min="5" max="50000"/>
+                    </div>
+                    <input class="amount_input" type="hidden" name="amount" value="5000"/>
+                  </div>
+                  <div class="col-md-3"><a id="view_input_set"><i class="fas fa-retweet"></i></a></div>
                 </div>
-                <div class="justify-content-center d-flex my-3 col-10 mx-auto">
+                <div class="justify-content-center d-flex my-3 col-10 mx-auto find">
+                  <div class="text-primary mr-3" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>
                   <input id="ex13" type="text"/>
+                  <div class="text-primary ml-3" id="subir"><i class="fal fa-plus-circle font-23"></i></div>
                 </div>
                 <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary">
                   <p class="mb-0 text-right font-12 mr-2">Interés anual a <br> partir de tan solo</p><span class="font-30 font-weight-bold">22%</span>
                 </div>
-                <button class="btn btn-primary btn-md btn-rounded mt-4 col-md-6 mx-auto font-12 col-8">Simular préstramos</button>
+                <button class="btn btn-primary btn-md btn-rounded my-4 col-md-6 mx-auto font-12 col-8 simular_prestamo font-15">Simular préstamo</button>
               </div>
             </div>
           </div>
@@ -90,8 +98,8 @@
     </main>
     <!-- Footer-->
     <footer class="page-footer pt-4 mt-5">
-      <!-- Copyright-->
-      <div class="footer-copyright py-3 text-center footer-blue-rounded">
+      <!-- Copyright--><img class="img-background z-index-1 d-md-block d-none" src="img/curva-d-p.svg"/><img class="img-background z-index-1 d-md-none d-block" src="img/curva-m-p.svg"/>
+      <div class="py-3 text-center">
         <div class="container-fluid pt-md-4 pt-4"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
       </div>
       <!-- Copyright-->
@@ -107,28 +115,7 @@
     <script type="text/javascript" src="js/bootstrap-slider.js"></script>
     <!-- MDB core JavaScript-->
     <script type="text/javascript" src="js/mdb.js"></script>
-    <!-- Custom scripts-->
-    <script>
-      // Without JQuery
-      var slider = new Slider("#ex13", {
-          ticks: ['1000', '5000', '10000', '15000', '20000'],
-          ticks_labels: ['|', '|', '|', '|', '|'],
-          ticks_snap_bounds:1,
-          tooltip_position:'bottom',
-          formatter: function (num) {
-              num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-              num = num.split('').reverse().join('').replace(/^[\.]/, '');
-              return '$' + num;
-          },
-      });
-      
-      $('#ex13').on('change',function (e) {
-          e.preventDefault();
-          let num = $(this).val();
-          num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-          num = num.split('').reverse().join('').replace(/^[\.]/, '');
-          $('.amount').text(num);
-      })
-    </script>
+    <!-- Script-->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

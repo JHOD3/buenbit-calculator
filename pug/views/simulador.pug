@@ -10,27 +10,40 @@ block content
                 h1 Simulador de crédito
             .card.py-md-5.pt-5.pb-4.col-md-12.px-0
                 p.text-center ¿Cuántos pesos necesitás?
-                div.d-flex.align-items-center
-                    div.col-md-3.text-right
-                        small.text-primary ARG
-                    div.col-md-6.justify-content-center.d-flex
-                        span.amount.font-30 10.000
-                    div.col-md-3
                 div.justify-content-center.d-flex.my-3.border-bottom.pb-5
-                    .col-md-8.mx-md-auto
-                        input#ex13(type='text')
+                    .col-md-12.mx-md-auto
+                        div.d-flex.align-items-center
+                            div.col-md-3.text-right
+                                small ARG
+                            div.col-md-6
+                                .text-center.align-items-center.font-35.justify-content-center.set_amount
+                                    | $
+                                    span.amount 5
+                                .md-form.set_amount(style='display:none;')
+                                    input#amount_input_set.form-control.validate.mb-md-1.mb-0.numberico(type='number', placeholder="Monto" min="5000" max="50000")
+                                    .invalid-feedback  El monto debe estar entre $5.000 y $50.000
+                                input(type="hidden" , name="amount" , value="5").amount_input.
+                            div.col-md-3
+                                a#view_input_set
+                                    i.fas.fa-retweet
+                        div.justify-content-center.d-flex.my-3.col-10.mx-auto.find
+                            #bajar.text-primary.mr-4
+                                i.fal.fa-minus-circle.font-23
+                            input#ex13(type='text')
+                            #subir.text-primary.ml-4
+                                i.fal.fa-plus-circle.font-23
                 div
                     .border-bottom.pb-5
                         p.text-center.mt-3 Plazo en meses
                         div.justify-content-center.d-flex
                             div(data-toggle='buttons')
-                                label.btn.btn-info.btn-rounded.px-4.font-20
+                                label.btn.btn-info.btn-rounded.btn-p.font-20
                                     input#option1(type='radio' name='options' autocomplete='off' checked='')
                                     |  3
-                                label.btn.btn-info.active.btn-rounded.px-4.font-20
+                                label.btn.btn-info.active.btn-rounded.btn-p.font-20
                                     input#option2(type='radio' name='options' autocomplete='off')
                                     |  6
-                                label.btn.btn-info.btn-rounded.px-4.font-20
+                                label.btn.btn-info.btn-rounded.btn-p.font-20
                                     input#option3(type='radio' name='options' autocomplete='off')
                                     |  12
                 div
@@ -38,13 +51,13 @@ block content
                         p.text-center.mt-5 Valor del préstamos sobre garantía
                         div.justify-content-center.d-flex
                             div(data-toggle='buttons')
-                                label.btn.btn-info.btn-rounded.px-4.font-20.py-md-2
+                                label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
                                     input#option1(type='radio' name='options' autocomplete='off' checked='')
                                     |  25%
-                                label.btn.btn-info.active.btn-rounded.px-4.font-20.py-md-2
+                                label.btn.btn-info.active.btn-rounded.btn-p.font-20.py-md-2
                                     input#option2(type='radio' name='options' autocomplete='off')
                                     |  50%
-                                label.btn.btn-info.btn-rounded.px-4.font-20.py-md-2
+                                label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
                                     input#option3(type='radio' name='options' autocomplete='off')
                                     |  75%
                 div
@@ -79,3 +92,6 @@ block content
             .container-fluid.pt-md-4.py-5.justify-content-center.d-none.d-md-flex
                 a(href='' )
                     img(src="img/logo-buenbit-d-w.svg")
+block script
+    // Script Simulador
+    script(type='text/javascript' src='js/simulador.js')

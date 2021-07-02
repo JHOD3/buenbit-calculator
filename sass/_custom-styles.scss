@@ -40,18 +40,43 @@ body{
 .footer-gracias{
     margin-top: -72px;
 }
+.fondo-footer-simulador{
+    background-image: url("../img/curva-d-s.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 @media (min-width: 768px){
     .footer-blue-rounded-alto-a{
         position: absolute;
         width: 100%;
-        height: 8rem;
+        height: 0rem;
         z-index: -1;
+        bottom: -175px;
     }
     .footer-blue-rounded-alto{
         width: 100%;
         height: 71rem;
         z-index: -1;
     }
+}
+.img-background{
+    width: 100%;
+    position: absolute;
+}
+.z-index-1{
+    z-index: -1;
+}
+.z-index-99{
+    z-index: 99;
+}
+.btn-p{
+    padding: 10px 20px !important;
 }
 @media (max-width: 768px){
     .footer-blue-rounded {

@@ -15637,15 +15637,15 @@ var _this = void 0;
       var isValid = !$input[0].validity.badInput;
 
       if (noValue && isValid) {
-        $input.removeClass('valid').removeClass('invalid');
+        $input.removeClass('is-valid').removeClass('is-invalid');
       } else {
         var valid = $input.is(':valid');
         var length = Number($input.attr('length')) || 0;
 
         if (valid && (!length || length > value.length)) {
-          $input.removeClass('invalid').addClass('valid');
+          $input.removeClass('is-invalid').addClass('is-valid');
         } else {
-          $input.removeClass('valid').addClass('invalid');
+          $input.removeClass('is-valid').addClass('is-invalid');
         }
       }
     }

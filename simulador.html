@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title>Buenbit || Calculadora</title>
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
     <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <!-- Bootstrap slider rang-->
@@ -48,14 +48,25 @@
             </div>
             <div class="card py-md-5 pt-5 pb-4 col-md-12 px-0">
               <p class="text-center">¿Cuántos pesos necesitás?</p>
-              <div class="d-flex align-items-center">
-                <div class="col-md-3 text-right"><small class="text-primary">ARG</small></div>
-                <div class="col-md-6 justify-content-center d-flex"><span class="amount font-30">10.000</span></div>
-                <div class="col-md-3"></div>
-              </div>
               <div class="justify-content-center d-flex my-3 border-bottom pb-5">
-                <div class="col-md-8 mx-md-auto">
-                  <input id="ex13" type="text"/>
+                <div class="col-md-12 mx-md-auto">
+                  <div class="d-flex align-items-center">
+                    <div class="col-md-3 text-right"><small>ARG</small></div>
+                    <div class="col-md-6">
+                      <div class="text-center align-items-center font-35 justify-content-center set_amount">$<span class="amount">5</span></div>
+                      <div class="md-form set_amount" style="display:none;">
+                        <input class="form-control validate mb-md-1 mb-0 numberico" id="amount_input_set" type="number" placeholder="Monto" min="5000" max="50000"/>
+                        <div class="invalid-feedback"> El monto debe estar entre $5.000 y $50.000</div>
+                      </div>
+                      <input class="amount_input" type="hidden" name="amount" value="5"/>
+                    </div>
+                    <div class="col-md-3"><a id="view_input_set"><i class="fas fa-retweet"></i></a></div>
+                  </div>
+                  <div class="justify-content-center d-flex my-3 col-10 mx-auto find">
+                    <div class="text-primary mr-4" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>
+                    <input id="ex13" type="text"/>
+                    <div class="text-primary ml-4" id="subir"><i class="fal fa-plus-circle font-23"></i></div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -63,13 +74,13 @@
                   <p class="text-center mt-3">Plazo en meses</p>
                   <div class="justify-content-center d-flex">
                     <div data-toggle="buttons">
-                      <label class="btn btn-info btn-rounded px-4 font-20">
+                      <label class="btn btn-info btn-rounded btn-p font-20">
                         <input id="option1" type="radio" name="options" autocomplete="off" checked=""/> 3
                       </label>
-                      <label class="btn btn-info active btn-rounded px-4 font-20">
+                      <label class="btn btn-info active btn-rounded btn-p font-20">
                         <input id="option2" type="radio" name="options" autocomplete="off"/> 6
                       </label>
-                      <label class="btn btn-info btn-rounded px-4 font-20">
+                      <label class="btn btn-info btn-rounded btn-p font-20">
                         <input id="option3" type="radio" name="options" autocomplete="off"/> 12
                       </label>
                     </div>
@@ -81,13 +92,13 @@
                   <p class="text-center mt-5">Valor del préstamos sobre garantía</p>
                   <div class="justify-content-center d-flex">
                     <div data-toggle="buttons">
-                      <label class="btn btn-info btn-rounded px-4 font-20 py-md-2">
+                      <label class="btn btn-info btn-rounded btn-p font-20 py-md-2">
                         <input id="option1" type="radio" name="options" autocomplete="off" checked=""/> 25%
                       </label>
-                      <label class="btn btn-info active btn-rounded px-4 font-20 py-md-2">
+                      <label class="btn btn-info active btn-rounded btn-p font-20 py-md-2">
                         <input id="option2" type="radio" name="options" autocomplete="off"/> 50%
                       </label>
-                      <label class="btn btn-info btn-rounded px-4 font-20 py-md-2">
+                      <label class="btn btn-info btn-rounded btn-p font-20 py-md-2">
                         <input id="option3" type="radio" name="options" autocomplete="off"/> 75%
                       </label>
                     </div>
@@ -142,15 +153,7 @@
         </section>
       </div>
     </main>
-    <!-- Footer-->
-    <footer class="page-footer pt-md-4 mt-5 footer-blue-rounded-alto-a">
-      <!-- Copyright-->
-      <div class="footer-copyright py-3 text-center footer-blue-rounded footer-blue-rounded-alto">
-        <div class="container-fluid pt-md-4 pt-4 d-md-none d-block"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
-      </div>
-      <!-- Copyright-->
-    </footer>
-    <!-- Footer-->
+    <div><img class="img-background z-index-1 d-md-block d-none" src="img/curva-d-s.svg"/><img class="img-background z-index-1 d-md-none d-block" src="img/curva-m-p.svg"/></div>
     <!-- JQuery-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips-->
@@ -161,28 +164,9 @@
     <script type="text/javascript" src="js/bootstrap-slider.js"></script>
     <!-- MDB core JavaScript-->
     <script type="text/javascript" src="js/mdb.js"></script>
-    <!-- Custom scripts-->
-    <script>
-      // Without JQuery
-      var slider = new Slider("#ex13", {
-          ticks: ['1000', '5000', '10000', '15000', '20000'],
-          ticks_labels: ['|', '|', '|', '|', '|'],
-          ticks_snap_bounds:1,
-          tooltip_position:'bottom',
-          formatter: function (num) {
-              num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-              num = num.split('').reverse().join('').replace(/^[\.]/, '');
-              return '$' + num;
-          },
-      });
-      
-      $('#ex13').on('change',function (e) {
-          e.preventDefault();
-          let num = $(this).val();
-          num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-          num = num.split('').reverse().join('').replace(/^[\.]/, '');
-          $('.amount').text(num);
-      })
-    </script>
+    <!-- Script-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Script Simulador-->
+    <script type="text/javascript" src="js/simulador.js"></script>
   </body>
 </html>

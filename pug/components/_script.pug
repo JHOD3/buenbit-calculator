@@ -8,27 +8,7 @@ script(type='text/javascript' src='js/bootstrap.js')
 script(type='text/javascript' src='js/bootstrap-slider.js')
 // MDB core JavaScript
 script(type='text/javascript' src='js/mdb.js')
-// Custom scripts
-script.
+// Script
+script(type='text/javascript' src='js/script.js')
+block script
 
-
-    // Without JQuery
-    var slider = new Slider("#ex13", {
-        ticks: ['1000', '5000', '10000', '15000', '20000'],
-        ticks_labels: ['|', '|', '|', '|', '|'],
-        ticks_snap_bounds:1,
-        tooltip_position:'bottom',
-        formatter: function (num) {
-            num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-            num = num.split('').reverse().join('').replace(/^[\.]/, '');
-            return '$' + num;
-        },
-    });
-
-    $('#ex13').on('change',function (e) {
-        e.preventDefault();
-        let num = $(this).val();
-        num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
-        num = num.split('').reverse().join('').replace(/^[\.]/, '');
-        $('.amount').text(num);
-    })

@@ -534,13 +534,13 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
                 this.tickLabels = [];
                 if (Array.isArray(this.options.ticks_labels) && this.options.ticks_labels.length > 0) {
                     this.tickLabelContainer = document.createElement('div');
-                    this.tickLabelContainer.className = 'slider-tick-label-container';
+                    this.tickLabelContainer.className = 'slider-tick-label-container row';
 
                     for (i = 0; i < this.options.ticks_labels.length; i++) {
                         var label = document.createElement('div');
                         var noTickPositionsSpecified = this.options.ticks_positions.length === 0;
                         var tickLabelsIndex = this.options.reversed && noTickPositionsSpecified ? this.options.ticks_labels.length - (i + 1) : i;
-                        label.className = 'slider-tick-label';
+                        label.className = 'slider-tick-label col';
                         label.innerHTML = this.options.ticks_labels[tickLabelsIndex];
 
                         this.tickLabels.push(label);
@@ -554,7 +554,6 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
 
                     var inner = document.createElement("div");
                     inner.className = "tooltip-inner";
-                    console.log(arrow);
                     tooltipElem.appendChild(arrow);
                     tooltipElem.appendChild(inner);
                 };
@@ -852,7 +851,7 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
                 step: 1,
                 precision: 0,
                 orientation: 'horizontal',
-                value: 5,
+                value: 5000,
                 range: false,
                 selection: 'before',
                 tooltip: 'show',
@@ -1339,6 +1338,8 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
                         var extraMargin = 0;
                         if (this.options.ticks_positions.length === 0) {
                             if (this.options.orientation !== 'vertical') {
+                               // this.tickLabelContainer.style[styleMargin] = -labelSize / 2 + "px";
+                                this.tickLabelContainer.style['width'] = "120%";
                                 this.tickLabelContainer.style[styleMargin] = -labelSize / 2 + "px";
                             }
                             extraMargin = this.tickLabelContainer.offsetHeight;
@@ -1377,7 +1378,7 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
                         }
 
                         if (this.tickLabels[i]) {
-                            this.tickLabels[i].style[styleSize] = labelSize + "px";
+                            //this.tickLabels[i].style[styleSize] = labelSize + "px";
 
                             if (this.options.orientation !== 'vertical' && this.options.ticks_positions[i] !== undefined) {
                                 this.tickLabels[i].style.position = 'absolute';
@@ -1590,6 +1591,7 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
             },
             _touchstart: function _touchstart(ev) {
                 this._mousedown(ev);
+
             },
             _triggerFocusOnHandle: function _triggerFocusOnHandle(handleIdx) {
                 if (handleIdx === 0) {
