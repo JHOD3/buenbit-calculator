@@ -76,10 +76,6 @@ $('input').on('change keyup click', function (event) {
         let interes = Math.max(Math.pow((diferencia_a_cobrar/monto+1), (12/meses))-1)*100;
         interes = interes.toFixed(2);
 
-
-
-
-
         let coutas = (diferencia_a_cobrar_c+monto)/meses;
 
         let interesTotal = coutas*meses;
