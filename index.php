@@ -1,4 +1,5 @@
-
+<?php session_start(); ?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
@@ -73,13 +74,13 @@
                 <div class="d-flex align-items-center">
                   <div class="col-md-3 text-right"><small>ARG</small></div>
                   <div class="col-md-6">
-                    <div class="text-center align-items-center font-35 justify-content-center set_amount">$<span class="amount">5.000</span></div>
+                    <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set">$<span class="amount">5.000</span></div>
                     <div class="md-form">
                       <input class="form-control mb-md-1 mb-0 set_amount numberico" id="amount_input_set" type="number" style="display:none;" placeholder="Monto" min="5" max="50000"/>
                     </div>
                     <input class="amount_input" type="hidden" name="amount" value="5000"/>
                   </div>
-                  <div class="col-md-3"><a id="view_input_set"><i class="fas fa-retweet"></i></a></div>
+                  <div class="col-md-3"><a class="view_input_set"><i class="fas fa-retweet"></i></a></div>
                 </div>
                 <div class="justify-content-center d-flex my-3 col-10 mx-auto find">
                   <div class="text-primary mr-3" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>

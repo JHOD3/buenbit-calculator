@@ -1,97 +1,101 @@
-extends ../layouts/_layout
+extends ../layouts/_layout1
 block variables
     - var title='Buenbit || Calculadora'
 block footer
-    include ../components/_footer1
+    //include ../components/_footer1
 block content
-    section.section-home-mt.container.col-md-10.mx-auto.px-0
-        .row.col-md-8.mx-auto.pt-5.px-0
-            div.mx-md-auto.mb-4
-                h1 Simulador de crédito
-            .card.py-md-5.pt-5.pb-4.col-md-12.px-0
-                p.text-center ¿Cuántos pesos necesitás?
-                div.justify-content-center.d-flex.my-3.border-bottom.pb-5
-                    .col-md-12.mx-md-auto
-                        div.d-flex.align-items-center
-                            div.col-md-3.text-right
-                                small ARG
-                            div.col-md-6
-                                .text-center.align-items-center.font-35.justify-content-center.set_amount
-                                    | $
-                                    span.amount 5
-                                .md-form.set_amount(style='display:none;')
-                                    input#amount_input_set.form-control.validate.mb-md-1.mb-0.numberico(type='number', placeholder="Monto" min="5000" max="50000")
-                                    .invalid-feedback  El monto debe estar entre $5.000 y $50.000
-                                input(type="hidden" , name="amount" , value="5").amount_input.
-                            div.col-md-3
-                                a#view_input_set
-                                    i.fas.fa-retweet
-                        div.justify-content-center.d-flex.my-3.col-10.mx-auto.find
-                            #bajar.text-primary.mr-4
-                                i.fal.fa-minus-circle.font-23
-                            input#ex13(type='text')
-                            #subir.text-primary.ml-4
-                                i.fal.fa-plus-circle.font-23
-                div
-                    .border-bottom.pb-5
-                        p.text-center.mt-3 Plazo en meses
-                        div.justify-content-center.d-flex
-                            div(data-toggle='buttons')
-                                label.btn.btn-info.btn-rounded.btn-p.font-20
-                                    input#option1(type='radio' name='options' autocomplete='off' checked='')
-                                    |  3
-                                label.btn.btn-info.active.btn-rounded.btn-p.font-20
-                                    input#option2(type='radio' name='options' autocomplete='off')
-                                    |  6
-                                label.btn.btn-info.btn-rounded.btn-p.font-20
-                                    input#option3(type='radio' name='options' autocomplete='off')
-                                    |  12
-                div
-                    .border-bottom.pb-5
-                        p.text-center.mt-5 Valor del préstamos sobre garantía
-                        div.justify-content-center.d-flex
-                            div(data-toggle='buttons')
-                                label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
-                                    input#option1(type='radio' name='options' autocomplete='off' checked='')
-                                    |  25%
-                                label.btn.btn-info.active.btn-rounded.btn-p.font-20.py-md-2
-                                    input#option2(type='radio' name='options' autocomplete='off')
-                                    |  50%
-                                label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
-                                    input#option3(type='radio' name='options' autocomplete='off')
-                                    |  75%
-                div
-                    .pb-5
-                        p.text-center.mt-5 Garantía necesaria
-                        div.justify-content-center.d-flex
-                            div
-                                div.col-md-6.justify-content-center.d-flex.align-items-center.mx-md-auto
-                                    small.text-primary.mr-md-3 DAI
-                                    span.font-30.text-primary 1.500
-                div.rgba-blue-slight.d-flex.align-items-center.justify-content-center.py-2.text-primary.py-md-4
-                    table
-                        tr
-                            td CTF:
-                            td.font-weight-bold 25%
-                        tr(style="height: 50px;")
-                            td Cuota mensual:
-                            td.font-weight-bold $250
-                        tr
-                            td Interés total a pagar:
-                            td.font-weight-bold $270
-                div
-                    .pb-md-1
-                        p.text-center.mt-5 Datos personales
-                        div.justify-content-center.d-flex
-                           form.col-md-10
-                               .md-form.md-outline
-                                   input#form81.form-control.validate.mb-md-1.mb-0(type='text', placeholder="Nombre y apellido")
-                               .md-form.md-outline
-                                   input#form82.form-control.validate(type='email', placeholder="Email")
-                               button.btn.btn-primary.btn-md.btn-rounded.mt-2.mx-auto.font-12.col-12 Simular préstramos
-            .container-fluid.pt-md-4.py-5.justify-content-center.d-none.d-md-flex
-                a(href='' )
-                    img(src="img/logo-buenbit-d-w.svg")
+    section.section-home-mt
+        .container.col-md-10.mx-auto.px-0.position-absolute.z-index-99.absolute-center
+            .row.col-md-8.mx-auto.pt-5.px-0
+                div.mx-md-auto.mb-4.col-11.mx-auto
+                    h1 Simulador de crédito
+                .card.py-md-5.pt-5.pb-4.col-md-12.px-0.col-11.mx-auto
+                    p.text-center ¿Cuántos pesos necesitás?
+                    div.justify-content-center.d-flex.my-3.border-bottom.pb-5
+                        .col-md-12.mx-md-auto
+                            div.d-flex.align-items-center
+                                div.col-md-3.text-right
+                                    small ARG
+                                div.col-md-6
+                                    .text-center.align-items-center.font-35.justify-content-center.set_amount.view_input_set
+                                        | $
+                                        span.amount 5
+                                    .md-form.set_amount(style='display:none;')
+                                        input#amount_input_set.form-control.validate.mb-md-1.mb-0.numberico(type='number', placeholder="Monto" min="5000" max="50000")
+                                        .invalid-feedback  El monto debe estar entre $5.000 y $50.000
+                                    input(type="hidden" , value="5000").amount_input.
+                                div.col-md-3
+                                    a.view_input_set
+                                        i.fas.fa-retweet
+                            div.justify-content-center.d-flex.my-3.col-10.mx-auto.find
+                                #bajar.text-primary.mr-4
+                                    i.fal.fa-minus-circle.font-23
+                                input#ex13(type='text')
+                                #subir.text-primary.ml-4
+                                    i.fal.fa-plus-circle.font-23
+                    div
+                        .border-bottom.pb-5
+                            p.text-center.mt-3 Plazo en meses
+                            div.justify-content-center.d-flex
+                                div(data-toggle='buttons')
+                                    label.btn.btn-info.active.btn-rounded.btn-p.font-20
+                                        input.meses(type='radio' name='meses' autocomplete='off' value="3" checked='')
+                                        |  3
+                                    label.btn.btn-info.btn-rounded.btn-p.font-20
+                                        input.meses(type='radio' name='meses' autocomplete='off' value="6")
+                                        |  6
+                                    label.btn.btn-info.btn-rounded.btn-p.font-20
+                                        input.meses(type='radio' name='meses' autocomplete='off' value="12")
+                                        |  12
+                    div
+                        .border-bottom.pb-5
+                            p.text-center.mt-5 Valor del préstamos sobre garantía
+                            div.justify-content-center.d-flex
+                                div(data-toggle='buttons')
+                                    label.btn.btn-info.active.btn-rounded.btn-p.font-20.py-md-2
+                                        input.porcentaje(type='radio' name='porcentaje' autocomplete='off' value="0.25" checked='')
+                                        |  25%
+                                    label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
+                                        input.porcentaje(type='radio' name='porcentaje' autocomplete='off' value="0.50")
+                                        |  50%
+                                    label.btn.btn-info.btn-rounded.btn-p.font-20.py-md-2
+                                        input.porcentaje(type='radio' name='porcentaje' autocomplete='off' value="0.75")
+                                        |  75%
+                    div
+                        .pb-5
+                            p.text-center.mt-5 Garantía necesaria
+                            div.justify-content-center.d-flex
+                                div
+                                    div.col-md-6.justify-content-center.d-flex.align-items-center.mx-md-auto
+                                        small.text-primary.mr-md-3 DAI
+                                        span.font-30.text-primary.garantia 1.500
+                    div.rgba-blue-slight.d-flex.align-items-center.justify-content-center.py-2.text-primary.py-md-4
+                        table
+                            tr
+                                td CTF:
+                                td.font-weight-bold.interes 25%
+                            tr(style="height: 50px;")
+                                td Cuota mensual:
+                                td.font-weight-bold.cuotas $250
+                            tr
+                                td Interés total a pagar:
+                                td.font-weight-bold.interes_total $270
+                    div
+                        .pb-md-1
+                            p.text-center.mt-5 Datos personales
+                            div.justify-content-center.d-flex
+                               form.col-md-10
+                                   .md-form.md-outline
+                                       input#form81.form-control.validate.mb-md-1.mb-0(type='text', name="full_name", placeholder="Nombre y apellido")
+                                   .md-form.md-outline
+                                       input#form82.form-control.validate(type='email', placeholder="Email", name="email")
+                                   button.btn.btn-primary.btn-md.btn-rounded.mt-2.mx-auto.font-12.col-12.test Simular préstramos
+                .container-fluid.py-md-4.py-3.justify-content-center.col-11.mx-auto
+                    a(href='' )
+                        img(src="img/logo-buenbit-d-w.svg").mx-auto.d-block
+    div.footer-background
 block script
     // Script Simulador
+    script(type='text/javascript' src='js/xlsx.full.min.js')
     script(type='text/javascript' src='js/simulador.js')
+    script(type='text/javascript' src='js/calculo.js')

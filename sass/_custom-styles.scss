@@ -51,6 +51,16 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+.footer-background{
+    height: 1611px;
+    background-image: linear-gradient(0deg, #0865fb 0%, #0865fb 100%);
+    clip-path: ellipse(200% 115% at 50.5% 150%);
+    z-index: -1;
+}
+.absolute-center{
+    left: 0;
+    right: 0;
+}
 @media (min-width: 768px){
     .footer-blue-rounded-alto-a{
         position: absolute;
@@ -79,6 +89,16 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px 20px !important;
 }
 @media (max-width: 768px){
+    .footer-background {
+        height: 1611px;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#0865fb), to(#0865fb));
+        background-image: linear-gradient(
+                        0deg
+                , #0865fb 0%, #0865fb 100%);
+        -webkit-clip-path: ellipse(200% 115% at 50.5% 150%);
+        clip-path: ellipse(286% 115% at 50.5% 150%);
+        z-index: -1;
+    }
     .footer-blue-rounded {
         height: 124px;
         border-color: #0865fb transparent transparent transparent;
