@@ -46,7 +46,7 @@
           <div class="row">
             <div class="col-md-5 pt-md-5 order-md-1 order-3">
               <div class="d-md-block d-none">
-                <h1>Asegurá el precio de <br> de venta de tus USDC</h1>
+                <h1>Asegurá el precio de <br> de venta de tus USDT</h1>
                 <!--<h2 class="font-60 text-primary font-weight-bold">al 24%</h2>-->
               </div>
               <div>
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="col-md-2 d-md-block d-none order-md-2 order-2 px-md-0">
-              <embed src="img/home-usdc.svg"/>
+              <embed src="img/home-usdt.svg"/>
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
