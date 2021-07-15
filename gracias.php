@@ -18,7 +18,7 @@
     <header>
       <!-- Navbar-->
       <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav bg-white">
-        <div class="container col-md-10">
+        <div class="container">
           <!-- SideNav slide-out button-->
           <div class="float-left d-md-none d-block"><a><img src="img/logo-buenbit-d.svg"/></a>
             <!--
@@ -40,36 +40,37 @@
       <!-- Navbar-->
     </header>
     <main>
-      <div class="container-fluid">
+        <div class="position-absolute absolute-center mx-auto" style="bottom: 0;">
+            <div class="container-fluid">
         <section class="section-home-mt container col-10 mx-auto px-0">
-          <div class="row col-md-11 mx-md-auto pt-5 px-0">
-            <div class="mx-md-auto mb-4">
+          <div class="col-md-11 mx-md-auto pt-5 px-0">
+            <div class="mx-md-auto text-center mb-4">
               <h1 class="font-35-m">¡Muchas gracias!</h1>
             </div>
             <div class="row align-items-center d-md-flex">
-              <div class="col-md-5 order-md-1 order-2"><img class="img-gracias mx-auto d-block" src="img/gracias.svg"/></div>
-              <div class="col-md-1 order-md-2 order-3"></div>
-              <div class="col-md-5 order-md-3 order-1">
-                <div class="font-30 font-weight-bold text-primary">Solicitud <br> enviada</div>
+              <div class="col-md-5 order-md-1 order-2"><img class="img-gracias ml-auto d-block" src="img/gracias-2.svg"/></div>
+              <!--<div class="col-md-1 order-md-2 order-3"></div>-->
+              <div class="col-md-7 order-md-2 order-1">
+                <div class="font-30 font-weight-bold text-primary">Hemos recibido tu solicitud <br> de venta a plazo.</div>
                 <p>
-                    Gracias por completar la solicitud. <br>Nuestro equipo realizará la evaluación correspondiente
-                  y se pondrá en contacto a la brevedad.
+                    Nos pondremos en contacto para finalizar la operación. <br>
+                    Saludos cordiales,
+                    <br>
+                    <b>El equipo de Buenbit</b>
                 </p>
               </div>
             </div>
           </div>
         </section>
       </div>
+
+            <div class="footer-background-gracias pt-3">
+                <div class="container-fluid py-md-4 py-3 justify-content-center col-11 mt-5">
+                    <a href=""><img class="mx-auto d-block" src="img/logo-buenbit-d-w.svg" /></a>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- Footer-->
-    <footer class="page-footer pt-4 footer-gracias">
-      <!-- Copyright--><img class="img-background z-index-1 d-md-block d-none" src="img/curva-d-p.svg"/><img class="img-background z-index-1 d-md-none d-block" src="img/curva-m-p.svg"/>
-      <div class="py-3 text-center">
-        <div class="container-fluid pt-md-5 pt-5"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
-      </div>
-      <!-- Copyright-->
-    </footer>
-    <!-- Footer-->
     <!-- JQuery-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips-->

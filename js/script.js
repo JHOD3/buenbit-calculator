@@ -43,7 +43,7 @@ $('#amount_input_set').on('keyup', function (event) {
 
 $('.view_input_set').on('click', function (event) {
     event.preventDefault();
-    $('.set_amount').val($('#ex13').val().replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d)\.?)/g, "."));
+    $('#amount_input_set').val($('#ex13').val().replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d)\.?)/g, "."));
     $('.set_amount').toggle();
     $('#amount_input_set').focus();
 });

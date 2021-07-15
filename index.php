@@ -46,8 +46,8 @@
           <div class="row">
             <div class="col-md-5 pt-md-5 order-md-1 order-3">
               <div class="d-md-block d-none">
-                <h1>Usá tus Dai para <br> pedir un préstamos</h1>
-                <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
+                <h1>Asegurá el precio <br> de venta de tus Dai</h1>
+                <!--<h2 class="font-60 text-primary font-weight-bold">al 24%</h2>-->
               </div>
               <div>
                 <div class="d-flex align-items-center mt-md-5 mt-5"><img class="mr-2" src="img/icono-manito.svg"/>
@@ -62,35 +62,56 @@
               </div>
             </div>
             <div class="col-md-2 d-md-block d-none order-md-2 order-2 px-md-0">
-              <embed src="img/persona-1.svg"/>
+              <embed src="img/home-dai.svg"/>
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
                 <h1>Usá tus Dai para <br> pedir un préstamos</h1>
                 <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
               </div>
-              <div class="card pt-5 ml-md-4 col-md-11 px-md-0">
-                <p class="text-center">¿Cuántos pesos necesitás?</p>
+              <div class="card pt-4 ml-md-4 col-md-11 px-md-0">
+                <p class="text-center">¿Cuántos Dai querés vender?</p>
                 <div class="d-flex align-items-center">
-                  <div class="col-md-3 text-right"><small>ARG</small></div>
+                  <div class="col-md-3 text-right"><small>DAI</small></div>
                   <div class="col-md-6">
-                    <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set">$<span class="amount">5.000</span></div>
-                    <div class="md-form">
+                    <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set"><span class="amount">5.000</span></div>
+                    <div class="md-form set_amount my-0" style="display:none;">
                       <input class="form-control mb-md-1 mb-0 set_amount numberico" id="amount_input_set" type="number" style="display:none;" placeholder="Monto" min="5" max="50000"/>
                     </div>
                     <input class="amount_input" type="hidden" name="amount" value="5000"/>
                   </div>
                   <div class="col-md-3"><a class="view_input_set"><i class="fas fa-retweet"></i></a></div>
                 </div>
-                <div class="justify-content-center d-flex my-3 col-10 mx-auto find">
+                <div class="justify-content-center d-flex my-3 col-11 mx-auto find">
                   <div class="text-primary mr-3" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>
                   <input id="ex13" type="text"/>
                   <div class="text-primary ml-3" id="subir"><i class="fal fa-plus-circle font-23"></i></div>
                 </div>
-                <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary">
-                  <p class="mb-0 text-right font-12 mr-2">Interés anual a <br> partir de tan solo</p><span class="font-30 font-weight-bold">22%</span>
-                </div>
-                <button class="btn btn-primary btn-md btn-rounded my-4 col-md-6 mx-auto font-12 col-8 simular_prestamo font-15">Simular préstamo</button>
+                  <div>
+                      <div class="border-bottom border-top pb-3">
+                          <p class="text-center mt-3 mb-1">¿En cuántos meses?</p>
+                          <div class="justify-content-center d-flex">
+                              <div data-toggle="buttons">
+                                  <label class="btn btn-info active btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="1" checked="" /> 1 </label>
+                                  <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="3" checked="" /> 3 </label>
+                                  <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="6" /> 6 </label>
+                                  <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="12" /> 12 </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pb-1">
+                      <p class="text-center mt-3 mb-0">Vas a recibir:</p>
+                      <div class="justify-content-center d-flex">
+                          <div>
+                              <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto">
+                                  <small class="text-primary mr-md-3">USD</small>
+                                  <span class="font-30 text-primary garantia">1.500</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <button class="btn btn-primary btn-md btn-rounded mb-4 mt-1 col-md-6 mx-auto font-12 col-8 simular_prestamo font-15">Solicitar seguro</button>
               </div>
             </div>
           </div>
@@ -118,5 +139,9 @@
     <script type="text/javascript" src="js/mdb.js"></script>
     <!-- Script-->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Script libreria para leer excel file-->
+    <script type="text/javascript" src="js/xlsx.full.min.js"></script>
+    <!-- Script calculo otras-->
+    <script type="text/javascript" src="js/calculo-otras.js"></script>
   </body>
 </html>

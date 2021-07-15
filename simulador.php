@@ -64,16 +64,16 @@
             <div class="container col-md-10 mx-auto px-0 position-absolute z-index-99 absolute-center">
                 <div class="row col-md-8 mx-auto pt-5 px-0">
                     <div class="mx-md-auto mb-4 col-11 mx-auto">
-                        <h1>Simulador de crédito</h1>
+                        <h1 class="text-center">Simulador de operación</h1>
                     </div>
-                    <div class="card py-md-5 pt-5 pb-4 col-md-12 px-0 col-11 mx-auto">
+                    <div class="card py-md-5 pt-5 pb-2 col-md-12 px-0 col-11 mx-auto">
                         <p class="text-center">¿Cuántos pesos necesitás?</p>
-                        <div class="justify-content-center d-flex my-3 border-bottom pb-5">
+                        <div class="justify-content-center d-flex my-3 border-bottom pb-4">
                             <div class="col-md-12 mx-md-auto">
                                 <div class="d-flex align-items-center">
-                                    <div class="col-md-3 text-right"><small>ARG</small></div>
+                                    <div class="col-md-3 text-right"><small>DAI</small></div>
                                     <div class="col-md-6">
-                                        <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set">$<span class="amount">5</span></div>
+                                        <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set"><span class="amount">5</span></div>
                                         <div class="md-form set_amount" style="display: none;">
                                             <input class="form-control validate mb-md-1 mb-0 numberico" id="amount_input_set" type="number" placeholder="Monto" min="5000" max="50000" />
                                             <div class="invalid-feedback">El monto debe estar entre $5.000 y $50.000</div>
@@ -91,59 +91,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="border-bottom pb-5">
-                                <p class="text-center mt-3">Plazo en meses</p>
-                                <div class="justify-content-center d-flex">
-                                    <div data-toggle="buttons">
-                                        <label class="btn btn-info active btn-rounded btn-p font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="3" checked="" /> 3 </label>
-                                        <label class="btn btn-info btn-rounded btn-p font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="6" /> 6 </label>
-                                        <label class="btn btn-info btn-rounded btn-p font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="12" /> 12 </label>
+                        <div class="border-bottom pb-4">
+                            <p class="text-center mt-3 mb-3">¿En cuántos meses?</p>
+                            <div class="justify-content-center d-flex">
+                                <div data-toggle="buttons">
+                                    <label class="btn btn-info active btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="1" checked="" /> 1 </label>
+                                    <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="3" checked="" /> 3 </label>
+                                    <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="6" /> 6 </label>
+                                    <label class="btn btn-info btn-rounded btn-c font-20"> <input class="meses" type="radio" name="meses" autocomplete="off" value="12" /> 12 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-4">
+                            <p class="text-center mt-5">Vas a recibir:</p>
+                            <div class="justify-content-center d-flex">
+                                <div>
+                                    <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto">
+                                        <small class="text-primary mr-md-3">USD</small>
+                                        <span class="font-30 text-primary garantia">1.500</span>
+                                        <input type="hidden" name="monto" id="monto" >
+                                        <input type="hidden" name="meses" id="meses" >
+                                        <input type="hidden" name="monto_recibir" id="monto_recibir" >
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="border-bottom pb-5">
-                                <p class="text-center mt-5">Valor del préstamos sobre garantía</p>
-                                <div class="justify-content-center d-flex">
-                                    <div data-toggle="buttons">
-                                        <label class="btn btn-info active btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.25" checked="" /> 25% </label>
-                                        <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.50" /> 50% </label>
-                                        <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.75" /> 75% </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="pb-5">
-                                <p class="text-center mt-5">Garantía necesaria</p>
-                                <div class="justify-content-center d-flex">
-                                    <div>
-                                        <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto"><small class="text-primary mr-md-3">DAI</small><span class="font-30 text-primary garantia">1.500</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary py-md-4">
-                            <table>
-                                <tr>
-                                    <td>CTF:</td>
-                                    <td class="font-weight-bold interes">25%</td>
-                                    <input type="hidden" class="interes_input" name="interes">
-                                </tr>
-                                <tr style="height: 50px;">
-                                    <td>Cuota mensual:</td>
-                                    <td class="font-weight-bold cuotas">$250</td>
-                                    <input type="hidden" class="cuotas_input" name="cuotas">
-                                </tr>
-                                <tr>
-                                    <td>Interés total a pagar:</td>
-                                    <td class="font-weight-bold interes_total">$270</td>
-                                    <input type="hidden" class="interes_total_input" name="interes_total">
-                                </tr>
-                            </table>
-                        </div>
+
                         <div>
                             <div class="pb-md-1">
                                 <p class="text-center mt-5">Datos personales</p>
@@ -169,7 +142,7 @@
             </div>
         </section>
     </form>
-    <div class="footer-background"></div>
+    <div class="footer-background-otra"></div>
 </main>
 <!--include ../components/_footer1-->
 <!-- JQuery-->
@@ -187,6 +160,6 @@
 <!-- Script Simulador-->
 <script type="text/javascript" src="js/xlsx.full.min.js"></script>
 <script type="text/javascript" src="js/simulador.js"></script>
-<script type="text/javascript" src="js/calculo.js"></script>
+<script type="text/javascript" src="js/calculo-otras.js"></script>
 </body>
 </html>

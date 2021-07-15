@@ -14,16 +14,16 @@ function request($mail_from_address, $mail_from_name, $mail_subject){
     try {
         $full_name = $_POST['full_name'];
         $email = $_POST['email'];
-        $interes = $_POST['interes'];
-        $cuotas = $_POST['cuotas'];
-        $interes_total = $_POST['interes_total'];
+        $monto = $_POST['monto'];
+        $meses = $_POST['meses'];
+        $monto_recibir = $_POST['monto_recibir'];
 
         $validation = $validator->validate($_POST, [
             'full_name' => 'required|max:128',
             'email'     => 'required|email',
-            'interes' =>'required',
-            'cuotas'   => 'required',
-            'interes_total' => 'required'
+            'monto' =>'required',
+            'meses'   => 'required',
+            'monto_recibir' => 'required'
         ]);
 
         $validation->validate();
@@ -41,14 +41,14 @@ function request($mail_from_address, $mail_from_name, $mail_subject){
             exit(0);
         }
 
-        sendForm($mail_from_address, $mail_from_name, $mail_subject, $full_name, $email, $interes, $cuotas, $interes_total);
+        sendForm($mail_from_address, $mail_from_name, $mail_subject, $full_name, $email, $monto, $meses, $monto_recibir);
     } catch (Exception $e) {
         header('HTTP/1.1 500 Internal Server Error');
         exit(0);
     }
 }
 
-function sendForm($mail_from_address, $mail_from_name, $mail_subject, $full_name, $email, $interes, $cuotas, $interes_total){
+function sendForm($mail_from_address, $mail_from_name, $mail_subject, $full_name, $email, $monto, $meses, $monto_recibir){
     try {
         $mail = new PHPMailer();
         $mail->SMTPDebug = SMTP::DEBUG_OFF;
@@ -77,9 +77,9 @@ function sendForm($mail_from_address, $mail_from_name, $mail_subject, $full_name
         $body = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '../email_plantilla.html');
         $body = str_replace('%full_name%', $full_name, $body);
         $body = str_replace('%email%', $email, $body);
-        $body = str_replace('%interes%', $interes, $body);
-        $body = str_replace('%cuotas%', $cuotas, $body);
-        $body = str_replace('%interes_total%', $interes_total, $body);
+        $body = str_replace('%monto%', $monto, $body);
+        $body = str_replace('%meses%', $meses, $body);
+        $body = str_replace('%monto_recibir%', $monto_recibir, $body);
 
         //$mail->Body =  $msg;
         $mail->MsgHTML($body);
