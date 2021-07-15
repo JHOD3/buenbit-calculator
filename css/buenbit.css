@@ -23238,6 +23238,10 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 99;
 }
 
+.gracias-content {
+  bottom: 0;
+}
+
 .btn-p {
   padding: 10px 20px !important;
 }
@@ -23247,6 +23251,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 768px) {
+  .gracias-content {
+    bottom: 0;
+    top: 0;
+  }
+
   .footer-background {
     height: 1611px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#0865fb), to(#0865fb));

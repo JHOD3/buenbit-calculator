@@ -46,23 +46,23 @@
           <div class="row">
             <div class="col-md-5 pt-md-5 order-md-1 order-3">
               <div class="d-md-block d-none">
-                <h1>Asegurá el precio <br> de venta de tus Dai</h1>
+                <h1>Asegurá el precio de <br> de venta de tus USDC</h1>
                 <!--<h2 class="font-60 text-primary font-weight-bold">al 24%</h2>-->
               </div>
               <div>
                 <div class="d-flex align-items-center mt-md-5 mt-5"><img class="mr-2" src="img/icono-manito.svg"/>
-                  <p class="mb-0"><b class="mr-1 font-weight-500">¡Es fácil!</b>Dejá tus Dai en garantía y llévate  <br class="d-md-block d-none"> pesos para gastar en lo que necesites.</p>
+                  <p class="mb-0"><b class="mr-1 font-weight-500 text-primary">¡Es fácil!</b>Elegí el plazo y te ofrecemos un  <br class="d-md-block d-none"> precio de venta.</p>
                 </div>
-                <div class="d-flex align-items-center mt-3"><img class="mr-2" src="img/icono-rayo.svg"/>
-                  <p class="mb-0"><b class="mr-1 font-weight-500">¡Al toque!</b>Lo pedís y lo tenéis acreditado <br class="d-md-block d-none">en el momento.</p>
+                <div class="d-flex align-items-center mt-3"><img class="mr-2" src="img/icono-candado.svg"/>
+                  <p class="mb-0"><b class="mr-1 font-weight-500 text-primary">¡No te arriesgues!</b>Sabé exactamente <br class="d-md-block d-none">cuánto vas a recibir al final del período.</p>
                 </div>
-                <div class="d-flex align-items-center mt-3"><img class="mr-2" src="img/icono-atras.svg"/>
-                  <p class="mb-0"><b class="mr-1 font-weight-500">¡Lo cancelas cuando quieras!</b>Ni bien lo <br class="d-md-block d-none">haces, te devolvemos los Dai.</p>
+                <div class="d-flex align-items-center mt-3"><img class="mr-2" src="img/icono-estrella.svg"/>
+                  <p class="mb-0"><b class="mr-1 font-weight-500 text-primary">¡El mejor precio! </b>Te ofrecemos el mejor <br class="d-md-block d-none">precio del mercado.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-2 d-md-block d-none order-md-2 order-2 px-md-0">
-              <embed src="img/home-dai.svg"/>
+              <embed src="img/home-usdc.svg"/>
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">

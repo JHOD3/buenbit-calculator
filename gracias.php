@@ -40,11 +40,11 @@
       <!-- Navbar-->
     </header>
     <main>
-        <div class="position-absolute absolute-center mx-auto" style="bottom: 0;">
+        <div class="position-absolute absolute-center mx-auto gracias-content">
             <div class="container-fluid">
         <section class="section-home-mt container col-10 mx-auto px-0">
           <div class="col-md-11 mx-md-auto pt-5 px-0">
-            <div class="mx-md-auto text-center mb-4">
+            <div class="mx-md-auto text-md-center text-left mb-4">
               <h1 class="font-35-m">¡Muchas gracias!</h1>
             </div>
             <div class="row align-items-center d-md-flex">
@@ -62,8 +62,7 @@
             </div>
           </div>
         </section>
-      </div>
-
+        </div>
             <div class="footer-background-gracias pt-3">
                 <div class="container-fluid py-md-4 py-3 justify-content-center col-11 mt-5">
                     <a href=""><img class="mx-auto d-block" src="img/logo-buenbit-d-w.svg" /></a>
@@ -71,6 +70,7 @@
             </div>
         </div>
     </main>
+
     <!-- JQuery-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips-->
