@@ -156,7 +156,7 @@
                                             <input class="form-control validate" id="form82" type="email" placeholder="Email" name="email" required/>
                                         </div>
                                         <input type="hidden" name="token" value=<?=$_SESSION['token'];?>>
-                                        <button type="submit" class="btn btn-primary btn-md btn-rounded mt-2 mx-auto font-12 col-12 test">Simular préstramos</button>
+                                        <button type="submit" class="btn btn-primary btn-md btn-rounded mt-2 mx-auto font-12 col-12 test">Enviar solicitud</button>
                                     </div>
                                 </div>
                             </div>
