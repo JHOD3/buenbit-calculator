@@ -66,13 +66,13 @@
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
-                <h1>Usá tus Dai para <br> pedir un préstamos</h1>
+                <h1>Usá tus USDC para <br> pedir un préstamos</h1>
                 <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
               </div>
               <div class="card pt-4 ml-md-4 col-md-11 px-md-0">
-                <p class="text-center">¿Cuántos Dai querés vender?</p>
+                <p class="text-center">¿Cuántos USDC querés vender?</p>
                 <div class="d-flex align-items-center">
-                  <div class="col-md-3 text-right"><small>DAI</small></div>
+                  <div class="col-md-3 text-right"><small>USDC</small></div>
                   <div class="col-md-6">
                     <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set"><span class="amount">5.000</span></div>
                     <div class="md-form set_amount my-0" style="display:none;">

@@ -71,7 +71,7 @@
                         <div class="justify-content-center d-flex my-3 border-bottom pb-4">
                             <div class="col-md-12 mx-md-auto">
                                 <div class="d-flex align-items-center">
-                                    <div class="col-md-3 text-right"><small>DAI</small></div>
+                                    <div class="col-md-3 text-right"><small>USDC</small></div>
                                     <div class="col-md-6">
                                         <div class="text-center align-items-center font-35 justify-content-center set_amount view_input_set"><span class="amount">5</span></div>
                                         <div class="md-form set_amount" style="display: none;">
