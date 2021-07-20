@@ -27,6 +27,14 @@ function leerArchivo(callback) {
 const formatterPeso = new Intl.NumberFormat();
 $('input').on('change keyup click', function (event) {
     event.preventDefault();
+    accion();
+});
+
+$(document).ready(function () {
+    accion();
+})
+
+function accion() {
     leerArchivo(function (result) {
         let garantia = $('.garantia');
         let monto = parseFloat($('#ex13').val());
@@ -41,4 +49,4 @@ $('input').on('change keyup click', function (event) {
         $('#monto_recibir').val(cal_result.toFixed(2));
 
     });
-});
+}
