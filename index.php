@@ -66,7 +66,7 @@
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
-                <h1>Usá tus Dai para <br> pedir un préstamos</h1>
+                <h1>Usá tus Dai para <br> pedir un préstamo</h1>
                 <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
               </div>
               <div class="card pt-5 ml-md-4 col-md-11 px-md-0">
