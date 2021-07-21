@@ -66,11 +66,10 @@
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
-                <h1>Usá tus Dai para <br> pedir un préstamo</h1>
-                <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
+                <h1>Asegurá el precio <br> de venta de tus DAI</h1>
               </div>
               <div class="card pt-4 ml-md-4 col-md-11 px-md-0">
-                <p class="text-center">¿Cuántos Dai querés vender?</p>
+                <p class="text-center">¿Cuántos DAI querés vender?</p>
                 <div class="d-flex align-items-center">
                   <div class="col-md-3 text-right"><small>DAI</small></div>
                   <div class="col-md-6">
