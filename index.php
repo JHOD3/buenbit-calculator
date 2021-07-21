@@ -46,8 +46,7 @@
           <div class="row">
             <div class="col-md-5 pt-md-5 order-md-1 order-3">
               <div class="d-md-block d-none">
-                <h1>Asegurá el precio de <br> de venta de tus USDT</h1>
-                <!--<h2 class="font-60 text-primary font-weight-bold">al 24%</h2>-->
+                <h1>Asegurá el precio <br> de venta de tus USDT</h1>
               </div>
               <div>
                 <div class="d-flex align-items-center mt-md-5 mt-5"><img class="mr-2" src="img/icono-manito.svg"/>
@@ -66,8 +65,7 @@
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
-                <h1>Usá tus USDT para <br> pedir un préstamo</h1>
-                <h2 class="font-60 text-primary font-weight-bold">al 24%</h2>
+                <h1>Asegurá el precio <br> de venta de tus USDT</h1>
               </div>
               <div class="card pt-4 ml-md-4 col-md-11 px-md-0">
                 <p class="text-center">¿Cuántos USDT querés vender?</p>
