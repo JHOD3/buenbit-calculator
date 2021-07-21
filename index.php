@@ -46,7 +46,7 @@
           <div class="row">
             <div class="col-md-5 pt-md-5 order-md-1 order-3">
               <div class="d-md-block d-none">
-                <h1>Asegurá el precio <br> de venta de tus Dai</h1>
+                <h1>Asegurá el precio <br> de venta de tus DAI</h1>
                 <!--<h2 class="font-60 text-primary font-weight-bold">al 24%</h2>-->
               </div>
                 <div>
