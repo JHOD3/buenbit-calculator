@@ -64,7 +64,7 @@
             <div class="container col-md-10 mx-auto px-0 position-absolute z-index-99 absolute-center">
                 <div class="row col-md-8 mx-auto pt-5 px-0">
                     <div class="mx-md-auto mb-4 col-11 mx-auto">
-                        <h1>Simulador de crédito</h1>
+                        <h1 class="text-center">Simulador de crédito</h1>
                     </div>
                     <div class="card py-md-5 pt-5 pb-4 col-md-12 px-0 col-11 mx-auto">
                         <p class="text-center">¿Cuántos pesos necesitás?</p>
@@ -108,16 +108,16 @@
                                 <p class="text-center mt-5">Valor del préstamos sobre garantía</p>
                                 <div class="justify-content-center d-flex">
                                     <div data-toggle="buttons">
-                                        <label class="btn btn-info active btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.25" checked="" /> 25% </label>
+                                        <label class="btn btn-info active btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.0" checked="" /> 0% </label>
+                                        <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.25" /> 25% </label>
                                         <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.50" /> 50% </label>
-                                        <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.75" /> 75% </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="pb-5">
-                                <p class="text-center mt-5">Garantía necesaria</p>
+                                <p class="text-center mt-5">Cantidad de criptomonedas a ofrecer en garantía:</p>
                                 <div class="justify-content-center d-flex">
                                     <div>
                                         <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto"><small class="text-primary mr-md-3">DAI</small><span class="font-30 text-primary garantia">1.500</span></div>
@@ -128,19 +128,35 @@
                         <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary py-md-4">
                             <table>
                                 <tr>
-                                    <td>CTF:</td>
-                                    <td class="font-weight-bold interes">25%</td>
-                                    <input type="hidden" class="interes_input" name="interes">
-                                </tr>
-                                <tr style="height: 50px;">
-                                    <td>Cuota mensual:</td>
-                                    <td class="font-weight-bold cuotas">$250</td>
-                                    <input type="hidden" class="cuotas_input" name="cuotas">
+                                    <td>Monto solicitado:</td>
+                                    <td class="font-weight-bold monto_solicitado pl-md-4">0</td>
+                                    <input type="hidden" class="monto_solicitado" name="monto_solicitado">
                                 </tr>
                                 <tr>
-                                    <td>Interés total a pagar:</td>
-                                    <td class="font-weight-bold interes_total">$270</td>
-                                    <input type="hidden" class="interes_total_input" name="interes_total">
+                                    <td>Cuotas:</td>
+                                    <td class="font-weight-bold cuotas pl-md-4">0</td>
+                                    <input type="hidden" class="cuotas" name="cuotas">
+                                </tr>
+                                <tr>
+                                    <td>Cuota inicial con IVA:</td>
+                                    <td class="font-weight-bold cuotas_inicial_con_iva pl-md-4">0</td>
+                                    <input type="hidden" class="cuotas_inicial_con_iva" name="cuotas_inicial_con_iva">
+                                </tr>
+                                <tr>
+                                    <td>Garantia en criptomonedas necesaria:</td>
+                                    <td class="font-weight-bold garantia_en_cripto pl-md-4">0</td>
+                                    <input type="hidden" class="garantia_en_cripto" name="garantia_en_cripto">
+                                </tr>
+
+                                <tr>
+                                    <td>CTF:</td>
+                                    <td class="font-weight-bold interes pl-md-4">0%</td>
+                                    <input type="hidden" class="interes_input" name="interes">
+                                </tr>
+                                <tr>
+                                    <td>Monto total a cancelar:</td>
+                                    <td class="font-weight-bold monto_total_cancelar pl-md-4">0</td>
+                                    <input type="hidden" class="monto_total_cancelar" name="monto_total_cancelar">
                                 </tr>
                             </table>
                         </div>
@@ -154,6 +170,9 @@
                                         </div>
                                         <div class="md-form md-outline">
                                             <input class="form-control validate" id="form82" type="email" placeholder="Email" name="email" required/>
+                                        </div>
+                                        <div class="md-form md-outline">
+                                            <input class="form-control validate" id="form82" type="tel" placeholder="Teléfono" name="phone" required/>
                                         </div>
                                         <input type="hidden" name="token" value=<?=$_SESSION['token'];?>>
                                         <button type="submit" class="btn btn-primary btn-md btn-rounded mt-2 mx-auto font-12 col-12 test">Enviar solicitud</button>
@@ -186,7 +205,9 @@
 <script type="text/javascript" src="js/script.js"></script>
 <!-- Script Simulador-->
 <script type="text/javascript" src="js/xlsx.full.min.js"></script>
+<!-- Script Solver -->
+<script src="https://unpkg.com/javascript-lp-solver/prod/solver.js"></script>
 <script type="text/javascript" src="js/simulador.js"></script>
-<script type="text/javascript" src="js/calculo.js"></script>
+<script type="text/javascript" src="js/calculo-dos.js"></script>
 </body>
 </html>
