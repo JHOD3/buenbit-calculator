@@ -1,5 +1,5 @@
 function leerArchivo(callback) {
-    var url = "../calculo-dos.xlsm";
+    var url = "../calculadoraBB-2/calculo-dos.xlsm";
     var oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
     oReq.responseType = "arraybuffer";

@@ -107,7 +107,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1043">
+                            <div class="card-header py-4" role="tab" id="heading-1043">
                                 <a data-toggle="collapse" href="#collapse-1043" aria-expanded="false" aria-controls="collapse-1043" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>
@@ -130,7 +130,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1044">
+                            <div class="card-header py-4" role="tab" id="heading-1044">
                                 <a data-toggle="collapse" href="#collapse-1044" aria-expanded="false" aria-controls="collapse-1044" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cuáles son los requisitos para obtener un préstamo?</div>
@@ -151,7 +151,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1045">
+                            <div class="card-header py-4" role="tab" id="heading-1045">
                                 <a data-toggle="collapse" href="#collapse-1045" aria-expanded="false" aria-controls="collapse-1045" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Puedo solicitar un préstamo en criptomonedas?</div>
@@ -170,7 +170,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1046">
+                            <div class="card-header py-4" role="tab" id="heading-1046">
                                 <a data-toggle="collapse" href="#collapse-1046" aria-expanded="false" aria-controls="collapse-1046" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Puedo cancelar la totalidad de mi préstamo antes del vencimiento?</div>
@@ -199,7 +199,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1047">
+                            <div class="card-header py-4" role="tab" id="heading-1047">
                                 <a data-toggle="collapse" href="#collapse-1047" aria-expanded="false" aria-controls="collapse-1047" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿En qué consiste la garantía en criptomonedas?</div>
@@ -220,7 +220,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1048">
+                            <div class="card-header py-4" role="tab" id="heading-1048">
                                 <a data-toggle="collapse" href="#collapse-1048" aria-expanded="false" aria-controls="collapse-1048" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cuáles son las criptomonedas que puedo ofrecer en garantía?</div>
@@ -239,7 +239,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1049">
+                            <div class="card-header py-4" role="tab" id="heading-1049">
                                 <a data-toggle="collapse" href="#collapse-1049" aria-expanded="false" aria-controls="collapse-1049" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cuál es el valor de las criptomonedas que tengo que ofrecer en garantía para obtener mi préstamo?</div>
@@ -258,7 +258,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1050">
+                            <div class="card-header py-4" role="tab" id="heading-1050">
                                 <a data-toggle="collapse" href="#collapse-1050" aria-expanded="false" aria-controls="collapse-1050" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿En qué momento recupero mis criptomonedas?</div>
@@ -287,7 +287,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1088">
+                            <div class="card-header py-4" role="tab" id="heading-1088">
                                 <a data-toggle="collapse" href="#collapse-1088" aria-expanded="false" aria-controls="collapse-1088" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿En cuantas cuotas puedo cancelar mi préstamo? Podés cancelar tu préstamo en 3, 6 o 12 cuotas.</div>
@@ -306,7 +306,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1052">
+                            <div class="card-header py-4" role="tab" id="heading-1052">
                                 <a data-toggle="collapse" href="#collapse-1052" aria-expanded="false" aria-controls="collapse-1052" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cuál es el sistema de amortización de las cuotas?</div>
@@ -325,7 +325,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1053">
+                            <div class="card-header py-4" role="tab" id="heading-1053">
                                 <a data-toggle="collapse" href="#collapse-1053" aria-expanded="false" aria-controls="collapse-1053" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cuál es el sistema de amortización de las cuotas?</div>
@@ -344,7 +344,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1054">
+                            <div class="card-header py-4" role="tab" id="heading-1054">
                                 <a data-toggle="collapse" href="#collapse-1054" aria-expanded="false" aria-controls="collapse-1054" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cómo puedo ver el vencimiento de mis cuotas?</div>
@@ -363,7 +363,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1054">
+                            <div class="card-header py-4" role="tab" id="heading-1054">
                                 <a data-toggle="collapse" href="#collapse-1054" aria-expanded="false" aria-controls="collapse-1054" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Cómo puedo cancelar las cuotas?</div>
@@ -382,7 +382,7 @@
                         <div class="card">
 
                             <!-- Card header -->
-                            <div class="card-header" role="tab" id="heading-1055">
+                            <div class="card-header py-4" role="tab" id="heading-1055">
                                 <a data-toggle="collapse" href="#collapse-1055" aria-expanded="false" aria-controls="collapse-1055" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
                                         <div>¿Qué pasa con la garantía si no puedo cancelar las cuotas?</div>
