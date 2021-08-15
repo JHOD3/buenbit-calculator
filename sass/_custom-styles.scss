@@ -53,17 +53,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .footer-background{
     height: 1852px;
-    background-image: linear-gradient(0deg, #0865fb 0%, #0865fb 100%);
+    background-image: linear-gradient(0deg, #3581fa 0%, #3581fa 100%);
     clip-path: ellipse(200% 71% at 50.5% 150%);
     z-index: -1;
 }
 .footer-background-home {
-    height: 406px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#0865fb), to(#0865fb));
+    height: 441px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
     background-image: linear-gradient(
                     0deg
-            , #0865fb 0%, #0865fb 100%);
-    -webkit-clip-path: ellipse(200% 71% at 50.5% 150%);
+            , #3581fa 0%, #3581fa 100%);
+    -webkit-clip-path: ellipse(80% 61% at 50.5% 66%);
     clip-path: ellipse(80% 61% at 50.5% 66%);
     z-index: -1;
 }
@@ -72,12 +72,17 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 10px;
 }
 .p-btn-footer-f{
-    padding: 7px 14px;
-    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px 0.58rem;
 }
 .absolute-center{
     left: 0;
     right: 0;
+}
+.iconos-footer {
+    width: 2.8rem;
+    height: 2.8rem;
 }
 @media (min-width: 768px){
     .footer-blue-rounded-alto-a{
@@ -111,12 +116,16 @@ input[type=number]::-webkit-outer-spin-button {
     transform: scale(1.5);
 }
 @media (max-width: 768px){
+    .iconos-footer {
+        width: 2rem;
+        height: 2rem;
+    }
     .footer-background-home {
         height: 318px;
-        background-image: -webkit-gradient(linear, left bottom, left top, from(#0865fb), to(#0865fb));
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
         background-image: linear-gradient(
                         0deg
-                , #0865fb 0%, #0865fb 100%);
+                , #3581fa 0%, #3581fa 100%);
         -webkit-clip-path: ellipse(200% 71% at 50.5% 150%);
         clip-path: ellipse(102% 61% at 50.5% 57%);
         z-index: -1;
@@ -124,10 +133,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     .footer-background {
         height: 1611px;
-        background-image: -webkit-gradient(linear, left bottom, left top, from(#0865fb), to(#0865fb));
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
         background-image: linear-gradient(
                         0deg
-                , #0865fb 0%, #0865fb 100%);
+                , #3581fa 0%, #3581fa 100%);
         -webkit-clip-path: ellipse(200% 115% at 50.5% 150%);
         clip-path: ellipse(286% 115% at 50.5% 150%);
         z-index: -1;

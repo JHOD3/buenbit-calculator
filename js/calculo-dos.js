@@ -24,10 +24,12 @@ function leerArchivo(callback) {
     }
     oReq.send();
 }
-const formatterPeso = new Intl.NumberFormat('en-US', {
+const formatterPeso = new Intl.NumberFormat(['ban', 'id'], {
     style: 'currency',
-    currency: 'USD'
+    currency: 'ARG'
 });
+const formatterNumero = new Intl.NumberFormat(['ban', 'id']);
+
 $('input').on('change keyup click', function (event) {
     event.preventDefault();
     leerArchivo(function (result) {
@@ -339,23 +341,23 @@ $('input').on('change keyup click', function (event) {
         let B53 = -(B47); // Buenbit intereses ganados por prestamo
 
        // console.log(B20,B21,B22,B23,B24,B25)
-        $('.monto_solicitado').text('AR$ '+B3);
-        $('input[name="monto_solicitado"]').val(B3);
+        $('.monto_solicitado').text(formatterPeso.format(B3.toFixed(2)));
+        $('input[name="monto_solicitado"]').val(formatterPeso.format(B3.toFixed(2)));
 
         $('.cuotas').text(B4);
         $('input[name="cuotas"]').val(B4);
 
-        $('.cuotas_inicial_con_iva').text('AR$ '+B21.toFixed(2));
-        $('input[name="cuotas_inicial_con_iva"]').val(B21);
+        $('.cuotas_inicial_con_iva').text( formatterPeso.format(B21.toFixed(2)));
+        $('input[name="cuotas_inicial_con_iva"]').val(formatterPeso.format(B21.toFixed(2)));
 
-        $('.garantia_en_cripto').text(B20.toFixed(2));
-        $('input[name="garantia_en_cripto"]').val(B20);
+        $('.garantia_en_cripto').text(formatterNumero.format(B20.toFixed(2)));
+        $('input[name="garantia_en_cripto"]').val(formatterNumero.format(B20.toFixed(2)));
 
-        $('.interes').text(B24.toFixed(2)+'%');
-        $('input[name="interes"]').val(B24);
+        $('.interes').text((B24*100).toFixed(2)+'%');
+        $('input[name="interes"]').val((B24*100).toFixed(2)+'%');
 
-        $('.monto_total_cancelar').text('AR$ '+B17.toFixed(2));
-        $('input[name="monto_total_cancelar"]').val(B17);
+        $('.monto_total_cancelar').text(formatterPeso.format(B17.toFixed(2)));
+        $('input[name="monto_total_cancelar"]').val(formatterPeso.format(B17.toFixed(2)));
 
         $('.garantia').text(B20.toFixed(2));
     });

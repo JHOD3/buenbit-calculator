@@ -26,7 +26,6 @@ function request($mail_from_address, $mail_from_name, $mail_subject){
         $validation = $validator->validate($_POST, [
             'full_name' => 'required|max:128',
             'email'     => 'required|email',
-            'phone'     => 'required',
             'monto_solicitado' => 'required',
             'cuotas' => 'required',
             'cuotas_inicial_con_iva' => 'required',
