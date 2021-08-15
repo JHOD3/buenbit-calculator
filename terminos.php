@@ -91,22 +91,22 @@
         </div>
         <hr class="text-white border-info my-md-5">
         <div class="justify-content-center d-flex">
-            <a href="" class="btn p-btn-footer btn-success" >
+            <a href="https://open.spotify.com/show/5VfrmT5T2fmyxQNZEwY8wJ?si=jcfqwbLsS-6pJFnBCjMamA&nd=1" class="btn p-btn-footer btn-success" >
                 <i class="fab fa-spotify font-23"></i>
             </a>
-            <a href="" class="btn p-btn-footer-f btn-success" >
+            <a href="https://www.facebook.com/Buenbit/" class="btn p-btn-footer-f btn-success" >
                 <i class="fab fa-facebook-f font-23"></i>
             </a>
-            <a href=""  class="btn p-btn-footer btn-success" >
+            <a href="https://www.youtube.com/c/Buenbit"  class="btn p-btn-footer btn-success" >
                 <i class="fab fa-youtube font-20"></i>
             </a>
-            <a href=""  class="btn p-btn-footer btn-success" >
+            <a href="https://www.instagram.com/buenbit/"  class="btn p-btn-footer btn-success" >
                 <i class="fab fa-instagram font-23"></i>
             </a>
-            <a href=""  class="btn p-btn-footer btn-success" >
+            <a href="https://twitter.com/buenbit"  class="btn p-btn-footer btn-success" >
                 <i class="fab fa-twitter font-23"></i>
             </a>
-            <a href=""  class="btn p-btn-footer btn-success" >
+            <a href="https://t.me/buenbitcomunidad"  class="btn p-btn-footer btn-success" >
                 <i class="fab fa-telegram-plane font-23"></i>
             </a>
         </div>
