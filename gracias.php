@@ -51,7 +51,7 @@
             </div>
             <div class="row align-items-center d-md-flex">
               <div class="col-md-6 order-md-1 order-2">
-                  <img class="img-gracias mx-auto d-block" src="img/gracias-img.svg" style="height: 311px;transform: scale(1.7);"/></div>
+                  <img class="img-gracias mx-auto d-block" src="img/gracias-img.png" style="height: 311px;transform: scale(1.7);"/></div>
               <!--<div class="col-md-1 order-md-2 order-3"></div>-->
               <div class="col-md-6 order-md-3 order-1">
                 <div class="font-30 font-weight-bold text-primary">Solicitud <br> enviada</div>

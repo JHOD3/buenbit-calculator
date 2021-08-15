@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="col-md-2 d-md-block d-none order-md-2 order-2 px-md-0">
-              <embed src="img/home-imagen.svg" class="img-home"/>
+              <embed src="img/home-imagen.png" class="img-home"/>
             </div>
             <div class="col-md-5 pt-5 order-md-3 order-1 pl-md-5 align-items-center d-md-flex">
               <div class="d-md-none d-block mb-4">
@@ -88,7 +88,7 @@
                 <div class="justify-content-center d-flex my-3 col-12 mx-auto find">
                   <div class="text-primary mr-3" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>
                   <input id="ex13" type="text"/>
-                  <div class="text-primary ml-3" id="subir"><i class="fal fa-plus-circle font-23"></i></div>
+                  <div class="text-primary ml-3" id="subir"><i class="far fa-plus-circle font-23"></i></div>
                 </div>
                 <button class="btn btn-primary btn-md btn-rounded my-4 col-md-6 mx-auto font-12 col-8 simular_prestamo font-15">Simular préstamo</button>
               </div>
@@ -96,10 +96,10 @@
           </div>
         </section>
         <section class="container col-md-10 mx-auto pt-5">
-            <div class="row mt-5">
+            <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal">Préstamos</h3>
+                    <h3 class="font-weight-normal font-35">Préstamos</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist" aria-multiselectable="true">
@@ -109,15 +109,17 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1043">
                                 <a data-toggle="collapse" href="#collapse-1043" aria-expanded="false" aria-controls="collapse-1043" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Enviar el formulario de este sitio web implica que voy a recibir el préstamo?                  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>
+                                            ¿Enviar el formulario de este sitio web implica que voy a recibir el préstamo?
+                                        </div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1043" class="collapse px-4" role="tabpanel" aria-labelledby="heading-1043" data-parent="#accordion-progress">
+                            <div id="collapse-1043" class="collapse px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1043" data-parent="#accordion-progress">
                                 <small>
                                     No. Al completar el formulario de este sitio web una persona de nuestro equipo va a contactarte para asesorarte, responder todas tus dudas y acompañarte en el proceso de otorgación del préstamo en pesos sólo si decides avanzar.
                                 </small>
@@ -130,15 +132,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1044">
                                 <a data-toggle="collapse" href="#collapse-1044" aria-expanded="false" aria-controls="collapse-1044" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cuáles son los requisitos para obtener un préstamo?                  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cuáles son los requisitos para obtener un préstamo?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1044" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1044" data-parent="#accordion-progress">
+                            <div id="collapse-1044" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1044" data-parent="#accordion-progress">
                                 <small>
                                     Para poder acceder a un préstamo en pesos garantizado con criptomonedas es necesario ser persona física, mayor a 18 años y contar con capacidad para contratar y ser usuario de Buenbit. Deberán haber aceptado los términos y condiciones generales del servicio de Créditos Colaterizados como así también los TYC y Políticas de Privacidad de Buenbit.
                                 </small>
@@ -151,15 +153,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1045">
                                 <a data-toggle="collapse" href="#collapse-1045" aria-expanded="false" aria-controls="collapse-1045" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Puedo solicitar un préstamo en criptomonedas?  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Puedo solicitar un préstamo en criptomonedas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1045" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1045" data-parent="#accordion-progress">
+                            <div id="collapse-1045" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1045" data-parent="#accordion-progress">
                                 <small> No, el préstamo que obtendrás es en pesos argentinos.</small>
                             </div>
                         </div>
@@ -170,14 +172,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1046">
                                 <a data-toggle="collapse" href="#collapse-1046" aria-expanded="false" aria-controls="collapse-1046" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">                                    ¿Puedo cancelar la totalidad de mi préstamo antes del vencimiento?  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Puedo cancelar la totalidad de mi préstamo antes del vencimiento?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1046" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1045" data-parent="#accordion-progress">
+                            <div id="collapse-1046" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1045" data-parent="#accordion-progress">
                                 <small>Sí, podés cancelar la totalidad de tu préstamo antes del vencimiento pactado, asumiendo los costos administrativos por cancelación anticipada.</small>
                             </div>
                         </div>
@@ -185,10 +188,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal">Garantías</h3>
+                    <h3 class="font-weight-normal font-35">Garantías</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist" aria-multiselectable="true">
@@ -198,15 +201,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1047">
                                 <a data-toggle="collapse" href="#collapse-1047" aria-expanded="false" aria-controls="collapse-1047" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿En qué consiste la garantía en criptomonedas? <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿En qué consiste la garantía en criptomonedas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1047" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1047" data-parent="#accordion-progress">
+                            <div id="collapse-1047" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1047" data-parent="#accordion-progress">
                                 <small>
                                     ¡No gastes tus ahorros en criptomonedas! Podés obtener un préstamo en pesos y usar tus criptomonedas como garantía de la devolución, y de esa manera obtener mejores tasas de financiación. Nosotros mantenemos tus criptomonedas en resguardo y en concepto de garantía hasta que puedas cancelar tu préstamo. Una vez que canceles la totalidad de tu préstamo te devolvemos tus criptomonedas.
                                 </small>
@@ -219,15 +222,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1048">
                                 <a data-toggle="collapse" href="#collapse-1048" aria-expanded="false" aria-controls="collapse-1048" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cuáles son las criptomonedas que puedo ofrecer en garantía?                  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cuáles son las criptomonedas que puedo ofrecer en garantía?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1048" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1048" data-parent="#accordion-progress">
+                            <div id="collapse-1048" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1048" data-parent="#accordion-progress">
                                 <small>Podés ofrecer en garantía distintos tipos de stablecoins como DAI, USDT, USDC o USDB.</small>
                             </div>
                         </div>
@@ -238,15 +241,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1049">
                                 <a data-toggle="collapse" href="#collapse-1049" aria-expanded="false" aria-controls="collapse-1049" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cuál es el valor de las criptomonedas que tengo que ofrecer en garantía para obtener mi préstamo?                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cuál es el valor de las criptomonedas que tengo que ofrecer en garantía para obtener mi préstamo?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1049" class="collapse px-4" role="tabpanel" aria-labelledby="heading-1049" data-parent="#accordion-progress">
+                            <div id="collapse-1049" class="collapse px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1049" data-parent="#accordion-progress">
                                 <small>El valor de las criptomonedas que deberás ofrecer en garantía depende del valor en pesos de tu préstamo y el costo financiero que quieras asumir. Cuanto mayor sea el valor del préstamo que querés obtener y menor el costo financiero que querés asumir, mayor será el valor de criptomonedas que necesitarás ofrecer en garantía. Podés calcular una estimación del valor a ofrecer en garantía usando la calculadora de simulación de préstamos en este sitio web.</small>
                             </div>
                         </div>
@@ -257,15 +260,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1050">
                                 <a data-toggle="collapse" href="#collapse-1050" aria-expanded="false" aria-controls="collapse-1050" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿En qué momento recupero mis criptomonedas?                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿En qué momento recupero mis criptomonedas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1050" class="collapse px-4" role="tabpanel" aria-labelledby="heading-1050" data-parent="#accordion-progress">
+                            <div id="collapse-1050" class="collapse px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1050" data-parent="#accordion-progress">
                                 <small>Una vez que canceles la totalidad del préstamo te devolveremos exactamente el mismo valor y en la misma criptomoneda que dejaste en garantía.</small>
                             </div>
                         </div>
@@ -273,10 +276,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal">Cuotas</h3>
+                    <h3 class="font-weight-normal font-35">Cuotas</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist" aria-multiselectable="true">
@@ -286,14 +289,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1088">
                                 <a data-toggle="collapse" href="#collapse-1088" aria-expanded="false" aria-controls="collapse-1088" class="collapsed">
-                                    <h6 class="mb-0 text-secondary">
-                                        ¿En cuantas cuotas puedo cancelar mi préstamo? Podés cancelar tu préstamo en 3, 6 o 12 cuotas.                  <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿En cuantas cuotas puedo cancelar mi préstamo? Podés cancelar tu préstamo en 3, 6 o 12 cuotas.</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1088" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1088" data-parent="#accordion-progress">
+                            <div id="collapse-1088" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1088" data-parent="#accordion-progress">
                                         ....
                             </div>
                         </div>
@@ -304,15 +308,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1052">
                                 <a data-toggle="collapse" href="#collapse-1052" aria-expanded="false" aria-controls="collapse-1052" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cuál es el sistema de amortización de las cuotas?                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cuál es el sistema de amortización de las cuotas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1052" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1052" data-parent="#accordion-progress">
+                            <div id="collapse-1052" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1052" data-parent="#accordion-progress">
                                 <small>El sistema de amortización de las cuotas es el francés.</small>
                             </div>
                         </div>
@@ -323,15 +327,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1053">
                                 <a data-toggle="collapse" href="#collapse-1053" aria-expanded="false" aria-controls="collapse-1053" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cuál es el sistema de amortización de las cuotas?                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cuál es el sistema de amortización de las cuotas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1053" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1053" data-parent="#accordion-progress">
+                            <div id="collapse-1053" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1053" data-parent="#accordion-progress">
                                 <small> El sistema de amortización de las cuotas es el francés.</small>
                             </div>
                         </div>
@@ -342,15 +346,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1054">
                                 <a data-toggle="collapse" href="#collapse-1054" aria-expanded="false" aria-controls="collapse-1054" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cómo puedo ver el vencimiento de mis cuotas?                                       <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cómo puedo ver el vencimiento de mis cuotas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1054" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1054" data-parent="#accordion-progress">
+                            <div id="collapse-1054" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1054" data-parent="#accordion-progress">
                                 <small> Una vez que obtengas tu préstamo te brindaremos el detalle para que puedas controlar el vencimiento de las cuotas. De todas maneras, también te vamos a avisar un día antes de cada vencimiento para que puedas recordarlo.</small>
                             </div>
                         </div>
@@ -361,15 +365,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1054">
                                 <a data-toggle="collapse" href="#collapse-1054" aria-expanded="false" aria-controls="collapse-1054" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Cómo puedo cancelar las cuotas?                                      <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Cómo puedo cancelar las cuotas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1054" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1054" data-parent="#accordion-progress">
+                            <div id="collapse-1054" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1054" data-parent="#accordion-progress">
                                 <small>Las cuotas se cancelan vía transferencia bancaria.</small>
                             </div>
                         </div>
@@ -380,16 +384,15 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="heading-1055">
                                 <a data-toggle="collapse" href="#collapse-1055" aria-expanded="false" aria-controls="collapse-1055" class="collapsed">
-                                    <h6 class="mb-0 text-secondary
-">
-                                        ¿Qué pasa con la garantía si no puedo cancelar las cuotas?
-                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    <h6 class="mb-0 text-secondary font-20 d-flex">
+                                        <div>¿Qué pasa con la garantía si no puedo cancelar las cuotas?</div>
+                                        <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapse-1055" class="collapse  px-4" role="tabpanel" aria-labelledby="heading-1055" data-parent="#accordion-progress">
+                            <div id="collapse-1055" class="collapse  px-4 m-acordion-content" role="tabpanel" aria-labelledby="heading-1055" data-parent="#accordion-progress">
                                 <small>En caso que no puedas cancelar las cuotas, como última instancia podríamos acudir a utilizar tus criptomonedas en garantía para venderlas a precio de mercado contra pesos argentinos, y así saldar la deuda de tu préstamo.</small>
                                 <small>En caso que el valor de tus criptomonedas en garantía superen el valor total del préstamo a cancelar, solo venderemos la cantidad de criptomonedas necesarias para cancelar el total de la deuda más los costos administrativos por la gestión, y el saldo en criptomonedas (en caso de existir), te será devuelto.</small>
                             </div>

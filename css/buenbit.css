@@ -13669,6 +13669,12 @@ a.pswp__share--download:hover {
   padding-bottom: 3.125rem;
 }
 
+.collapse-content table,
+.collapse-content p {
+  /*&.collapsing {
+    min-height: 2.65rem;
+  }*/
+}
 .collapse-content table.collapse:not(.show),
 .collapse-content p.collapse:not(.show) {
   display: -webkit-box;
@@ -13678,10 +13684,6 @@ a.pswp__share--download:hover {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-}
-.collapse-content table.collapsing,
-.collapse-content p.collapsing {
-  min-height: 2.65rem;
 }
 .collapse-content a.collapsed:after {
   content: "Read More";
@@ -23253,6 +23255,20 @@ input[type=number]::-webkit-outer-spin-button {
   width: 23rem;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.md-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rotate-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.m-acordion-content {
+  margin: 0.5rem 0rem 2.5rem 0rem;
 }
 
 @media (max-width: 768px) {
