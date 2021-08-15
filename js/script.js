@@ -19,6 +19,7 @@ $('#ex13').on('change',function (e) {
     num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
     num = num.split('').reverse().join('').replace(/^[\.]/, '');
     $('.amount').text(num);
+    $('.set_amount').val(num.replace(/\./g, ''));
 })
 let i = 0;
 $('#subir').on('mousedown', function(event) {
@@ -43,7 +44,7 @@ $('#amount_input_set').on('keyup', function (event) {
 
 $('.view_input_set').on('click', function (event) {
     event.preventDefault();
-    $('.set_amount').val($('#ex13').val().replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d)\.?)/g, "."));
+    $('.set_amount').val($('#ex13').val());
     $('.set_amount').toggle();
     $('#amount_input_set').focus();
 });

@@ -23,10 +23,7 @@
             <!-- SideNav slide-out button-->
             <div class="float-left d-md-none d-block">
                 <a><img src="img/logo-buenbit-d.svg" /></a>
-                <!--
-    a.button-collapse.black-text(href='#' data-activates='slide-out')
-        i.fas.fa-bars
-    -->
+
             </div>
             <!-- Breadcrumb-->
             <div class="breadcrumb-dn mr-auto">
@@ -61,7 +58,7 @@
         }
         ?>
         <section class="section-home-mt">
-            <div class="container col-md-10 mx-auto px-0 position-absolute z-index-99 absolute-center">
+            <div class="container col-md-10 mx-auto px-0">
                 <div class="row col-md-8 mx-auto pt-5 px-0">
                     <div class="mx-md-auto mb-4 col-11 mx-auto">
                         <h1 class="text-center">Simulador de crédito</h1>
@@ -84,7 +81,7 @@
                                         <a class="view_input_set"><i class="fas fa-retweet"></i></a>
                                     </div>
                                 </div>
-                                <div class="justify-content-center d-flex my-3 col-10 mx-auto find">
+                                <div class="justify-content-center d-flex my-3 col-12 mx-auto find">
                                     <div class="text-primary mr-4" id="bajar"><i class="fal fa-minus-circle font-23"></i></div>
                                     <input id="ex13" type="text" />
                                     <div class="text-primary ml-4" id="subir"><i class="fal fa-plus-circle font-23"></i></div>
@@ -118,47 +115,56 @@
                         <div>
                             <div class="pb-5">
                                 <p class="text-center mt-5">Cantidad de criptomonedas a ofrecer en garantía:</p>
-                                <div class="justify-content-center d-flex">
+                                <div class="text-center">
                                     <div>
                                         <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto"><small class="text-primary mr-md-3">DAI</small><span class="font-30 text-primary garantia">1.500</span></div>
                                     </div>
+                                    <img src="img/img-gratia.svg" alt="" class="mx-auto d-block">
+                                    <small class="text-muted">*Podés dejar Dais, USDT, USDC, BUSD</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="rgba-blue-slight d-flex align-items-center justify-content-center py-2 text-primary py-md-4">
+                        <div class="rgba-blue-slight ">
+                            <p class="text-center pt-2 pt-md-4 mb-0">Detalle del préstamo a solicitar</p>
+                            <div class="text-center pb-4">
+                                <img src="img/exclamacion.svg" alt="" style="width: 15px;">
+                               <small class="text-primary font-10"> Valores de referencia sujetos a cambios en las cotizaciones</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center pb-2 text-primary pb-md-4">
                             <table>
                                 <tr>
-                                    <td>Monto solicitado:</td>
-                                    <td class="font-weight-bold monto_solicitado pl-md-4">0</td>
+                                    <td class="font-12-m">Monto solicitado:</td>
+                                    <td class="font-weight-bold monto_solicitado pl-md-4 font-12-m">0</td>
                                     <input type="hidden" class="monto_solicitado" name="monto_solicitado">
                                 </tr>
                                 <tr>
-                                    <td>Cuotas:</td>
-                                    <td class="font-weight-bold cuotas pl-md-4">0</td>
+                                    <td class="font-12-m">Cuotas:</td>
+                                    <td class="font-weight-bold cuotas pl-md-4 font-12-m">0</td>
                                     <input type="hidden" class="cuotas" name="cuotas">
                                 </tr>
                                 <tr>
-                                    <td>Cuota inicial con IVA:</td>
-                                    <td class="font-weight-bold cuotas_inicial_con_iva pl-md-4">0</td>
+                                    <td class="font-12-m">Cuota inicial con IVA:</td>
+                                    <td class="font-weight-bold cuotas_inicial_con_iva pl-md-4 font-12-m">0</td>
                                     <input type="hidden" class="cuotas_inicial_con_iva" name="cuotas_inicial_con_iva">
                                 </tr>
                                 <tr>
-                                    <td>Garantia en criptomonedas necesaria:</td>
-                                    <td class="font-weight-bold garantia_en_cripto pl-md-4">0</td>
+                                    <td class="font-12-m">Garantia en criptomonedas necesaria:</td>
+                                    <td class="font-weight-bold garantia_en_cripto pl-md-4 font-12-m">0</td>
                                     <input type="hidden" class="garantia_en_cripto" name="garantia_en_cripto">
                                 </tr>
 
                                 <tr>
-                                    <td>CTF:</td>
-                                    <td class="font-weight-bold interes pl-md-4">0%</td>
+                                    <td class="font-12-m">CTF:</td>
+                                    <td class="font-weight-bold interes pl-md-4 font-12-m">0%</td>
                                     <input type="hidden" class="interes_input" name="interes">
                                 </tr>
                                 <tr>
-                                    <td>Monto total a cancelar:</td>
-                                    <td class="font-weight-bold monto_total_cancelar pl-md-4">0</td>
+                                    <td class="font-12-m">Monto total a cancelar:</td>
+                                    <td class="font-weight-bold monto_total_cancelar pl-md-4 font-12-m">0</td>
                                     <input type="hidden" class="monto_total_cancelar" name="monto_total_cancelar">
                                 </tr>
                             </table>
+                        </div>
                         </div>
                         <div>
                             <div class="pb-md-1">
@@ -181,15 +187,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid py-md-4 py-3 justify-content-center col-11 mx-auto">
-                        <a href=""><img class="mx-auto d-block" src="img/logo-buenbit-d-w.svg" /></a>
-                    </div>
                 </div>
             </div>
         </section>
     </form>
-    <div class="footer-background"></div>
 </main>
+<div class="footer-background-home align-items-center d-flex w-100 position-absolute" style="margin-top: -65px">
+    <div class="container px-md-4 pt-md-5">
+        <div class="row align-items-center d-flex">
+            <div class="col-6">
+                <a href=""><img class="" src="img/logo-buenbit-d-w.svg" /></a>
+            </div>
+            <div class="col-6 text-right">
+                <a href=""><small class="text-white "><u>Términos y condiciones</u></small></a>
+            </div>
+        </div>
+        <hr class="text-white border-info my-md-5 my-4">
+        <div class="justify-content-center d-flex">
+            <a href="" class="btn p-btn-footer btn-success" >
+                <i class="fab fa-spotify font-23"></i>
+            </a>
+            <a href="" class="btn p-btn-footer-f btn-success" >
+                <i class="fab fa-facebook-f font-23"></i>
+            </a>
+            <a href=""  class="btn p-btn-footer btn-success" >
+                <i class="fab fa-youtube font-20"></i>
+            </a>
+            <a href=""  class="btn p-btn-footer btn-success" >
+                <i class="fab fa-instagram font-23"></i>
+            </a>
+            <a href=""  class="btn p-btn-footer btn-success" >
+                <i class="fab fa-twitter font-23"></i>
+            </a>
+            <a href=""  class="btn p-btn-footer btn-success" >
+                <i class="fab fa-telegram-plane font-23"></i>
+            </a>
+        </div>
+    </div>
+</div>
 <!--include ../components/_footer1-->
 <!-- JQuery-->
 <script src="js/jquery-3.4.1.min.js"></script>

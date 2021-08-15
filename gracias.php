@@ -47,9 +47,10 @@
               <h1 class="font-35-m">¡Muchas gracias!</h1>
             </div>
             <div class="row align-items-center d-md-flex">
-              <div class="col-md-5 order-md-1 order-2"><img class="img-gracias mx-auto d-block" src="img/gracias.svg"/></div>
-              <div class="col-md-1 order-md-2 order-3"></div>
-              <div class="col-md-5 order-md-3 order-1">
+              <div class="col-md-6 order-md-1 order-2">
+                  <img class="img-gracias mx-auto d-block" src="img/gracias-img.svg" style="height: 311px;transform: scale(1.7);"/></div>
+              <!--<div class="col-md-1 order-md-2 order-3"></div>-->
+              <div class="col-md-6 order-md-3 order-1">
                 <div class="font-30 font-weight-bold text-primary">Solicitud <br> enviada</div>
                 <p>
                     Gracias por completar la solicitud. <br>Nuestro equipo realizará la evaluación correspondiente
@@ -62,13 +63,40 @@
       </div>
     </main>
     <!-- Footer-->
-    <footer class="page-footer pt-4 footer-gracias">
-      <!-- Copyright--><img class="img-background z-index-1 d-md-block d-none" src="img/curva-d-p.svg"/><img class="img-background z-index-1 d-md-none d-block" src="img/curva-m-p.svg"/>
-      <div class="py-3 text-center">
-        <div class="container-fluid pt-md-5 pt-5"><a href=""><img src="img/logo-buenbit-d-w.svg"/></a></div>
-      </div>
-      <!-- Copyright-->
-    </footer>
+    <div class="footer-background-home mt-md-5 align-items-center d-flex">
+        <div class="container px-md-4 pt-md-5">
+            <div class="row align-items-center d-flex">
+                <div class="col-md-6">
+                    <a href=""><img class="" src="img/logo-buenbit-d-w.svg" /></a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href=""><small class="text-white "><u>Términos y condiciones</u></small></a>
+                </div>
+            </div>
+            <hr class="text-white border-info my-md-5">
+            <div class="justify-content-center d-flex">
+                <a href="" class="btn p-btn-footer btn-success" >
+                    <i class="fab fa-spotify font-23"></i>
+                </a>
+                <a href="" class="btn p-btn-footer-f btn-success" >
+                    <i class="fab fa-facebook-f font-23"></i>
+                </a>
+                <a href=""  class="btn p-btn-footer btn-success" >
+                    <i class="fab fa-youtube font-20"></i>
+                </a>
+                <a href=""  class="btn p-btn-footer btn-success" >
+                    <i class="fab fa-instagram font-23"></i>
+                </a>
+                <a href=""  class="btn p-btn-footer btn-success" >
+                    <i class="fab fa-twitter font-23"></i>
+                </a>
+                <a href=""  class="btn p-btn-footer btn-success" >
+                    <i class="fab fa-telegram-plane font-23"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer-->
     <!-- JQuery-->
     <script src="js/jquery-3.4.1.min.js"></script>
