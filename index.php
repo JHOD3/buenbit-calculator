@@ -34,12 +34,10 @@
             </div>
             <!-- Navbar links-->
             <ul class="nav navbar-nav nav-flex-icons ml-auto d-md-flex d-none">
-                <li class="nav-item align-items-center d-flex"><a class="nav-link text-primary font-weight-normal"><span
-                                class="clearfix d-none d-sm-inline-block">Descargá la app</span></a></li>
-                <li class="nav-item mx-md-3"><a
+                <li class="nav-item mx-md-3"><a href="https://app.buenbit.com/registro"
                             class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span
                                 class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a></li>
-                <li class="nav-item"><a class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span
+                <li class="nav-item"><a href="https://app.buenbit.com/" class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span
                                 class="clearfix d-none d-sm-inline-block">Ingresar</span></a></li>
             </ul>
             <!-- Navbar links-->
@@ -63,7 +61,7 @@
                             No vendas tus criptomonedas para cubrir gastos <br class="d-md-block d-none"> inesperados. Pedí un préstamo en pesos y dejá tus <br class="d-md-block d-none"> criptomonedas en garantía.
                         </h6>
                         <div class="mt-md-4 d-md-block d-none">
-                            <a class="btn btn-primary btn-md btn-rounded mb-4 mt-2 col-md-3 mx-auto font-12 col-8 font-15 mt-md-3">
+                            <a class="btn btn-primary btn-md btn-rounded mb-4 mt-2 col-md-3 mx-auto font-12 col-8 font-15 mt-md-3 simular_prestamo">
                                 Ir al simulador
                             </a>
                         </div>
@@ -128,7 +126,7 @@
                             </div>
                             <div class="font-weight-bold font-20 py-md-3 py-3">Pedilo a tasa 0%</div>
                             <div>
-                                <p>Elegí la tasa de interés que queres <br> pagar y la cantidad de cuotas en las <br> que querés devolver tu préstamo.</p>
+                                <p>Elegí la tasa de interés que querés <br> pagar y la cantidad de cuotas en las <br> que querés devolver tu préstamo.</p>
                             </div>
                         </div>
 
@@ -162,7 +160,7 @@
         </section>
         <section class="pt-md-5 pt-5">
             <div class="mt-md-4 mt-4">
-                <h3 class="text-md-center font-35 font-35-m font-weight-bold px-md-0 px-4">Cubrí tus gastos sin <br class="d-block d-md-none"> usar los ahorros o la <br class="d-block d-md-none"> inversión</h3>
+                <h3 class="text-md-center font-35 font-35-m font-weight-bold px-md-0 px-4">Cubrí tus gastos sin  usar los ahorros o la inversión</h3>
             </div>
             <div class="col-md-9 mx-auto mt-md-5 mt-5">
                 <div class="container">
@@ -232,7 +230,7 @@
                             <div id="collapse-1043" class="collapse px-4 m-acordion-content" role="tabpanel"
                                  aria-labelledby="heading-1043" data-parent="#accordion-progress">
                                 <small>
-                                    Los usuarios están pidiendo préstamos principalmente para cubrir gastos que surgen de manera inesperada. Si tenes criptomonedas como ahorro o inversion, ahora no es necesario venderlas para poder cubrir esos gastos inesperados. Podes pedir un prestamo en pesos y dejar tus criptmononedas como garantia de la devolucion del prestamo.
+                                    Los usuarios están pidiendo préstamos principalmente para cubrir gastos que surgen de manera inesperada. Si tenés criptomonedas como ahorro o inversión, ahora no es necesario venderlas para poder cubrir esos gastos inesperados. Podés pedir un préstamo en pesos y dejar tus criptmononedas como garantía de la devolución del préstamo.
                                 </small>
                             </div>
                         </div>
@@ -273,7 +271,7 @@
                                 <a data-toggle="collapse" href="#collapse-10451" aria-expanded="false"
                                    aria-controls="collapse-10451" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
-                                        <div>¿Como puedo pedir un prestamo?</div>
+                                        <div>¿Cómo puedo pedir un préstamo?</div>
                                         <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
@@ -283,7 +281,7 @@
                             <div id="collapse-10451" class="collapse  px-4 m-acordion-content" role="tabpanel"
                                  aria-labelledby="heading-10451" data-parent="#accordion-progress">
                                 <small>
-                                    Al completar el formulario de simulación de prestamo en este sitio web, una persona de nuestro equipo te va a contactar para asesorarte, responder todas tus dudas y acompañarte en el proceso de otorgación del préstamo en pesos sólo si decides avanzar.
+                                    Al completar el formulario de simulación de préstamo en este sitio web, una persona de nuestro equipo te va a contactar para asesorarte, responder todas tus dudas y acompañarte en el proceso de otorgación del préstamo en pesos sólo si decides avanzar.
                                 </small>
                             </div>
                         </div>
@@ -296,7 +294,7 @@
                                 <a data-toggle="collapse" href="#collapse-10452" aria-expanded="false"
                                    aria-controls="collapse-10452" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
-                                        <div>¿Cuantos pesos puedo pedir prestados?</div>
+                                        <div>¿Cuántos pesos puedo pedir prestados?</div>
                                         <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
                                 </a>
@@ -306,7 +304,7 @@
                             <div id="collapse-10452" class="collapse  px-4 m-acordion-content" role="tabpanel"
                                  aria-labelledby="heading-10452" data-parent="#accordion-progress">
                                 <small>
-                                    Podes pedir tu prestamo por un valor de hasta AR$ 50.000. Tene en cuenta que cuanto mayor sea el valor de tu prestamo, mayor sera la garantia necesaria a ofrecer en criptomonedas.
+                                    Podés pedir tu préstamo por un valor de hasta AR$ 50.000. Tené en cuenta que cuanto mayor sea el valor de tu préstamo, mayor será la garantía necesaria a ofrecer en criptomonedas.
                                 </small>
                             </div>
                         </div>
@@ -480,7 +478,7 @@
                                 <a data-toggle="collapse" href="#collapse-1088" aria-expanded="false"
                                    aria-controls="collapse-1088" class="collapsed">
                                     <h6 class="mb-0 text-secondary font-20 d-flex">
-                                        <div>¿En cuantas cuotas puedo cancelar mi préstamo?
+                                        <div>¿En cuántas cuotas puedo cancelar mi préstamo?
                                         </div>
                                         <i class="far fa-plus rotate-icon ml-auto"></i>
                                     </h6>
@@ -490,7 +488,7 @@
                             <!-- Card body -->
                             <div id="collapse-1088" class="collapse  px-4 m-acordion-content" role="tabpanel"
                                  aria-labelledby="heading-1088" data-parent="#accordion-progress">
-                                Podés cancelar tu préstamo en 3, 6 o 12 cuotas.
+                                <small>Podés cancelar tu préstamo en 3, 6 o 12 cuotas.</small>
                             </div>
                         </div>
                         <!-- Accordion card -->
@@ -512,7 +510,7 @@
                             <div id="collapse-1052" class="collapse  px-4 m-acordion-content" role="tabpanel"
                                  aria-labelledby="heading-1052" data-parent="#accordion-progress">
                                 <small>
-                                    Podés elegir cuál es la tasa de interés que queres pagar por tu prestamo, incluso con la posibilidad de obtener tu prestamo a tasa 0%. Cuanto mayor sea el valor de las criptomonedas que ofrezcas en garantía menor será la tasa de interes a pagar. Podés usar la calculadora de simulación de préstamos en este sitio web y calcular la tasa de interes que pagarias en tu prestamo.
+                                    Podés elegir cuál es la tasa de interés que querés pagar por tu préstamo, incluso con la posibilidad de obtener tu préstamo a tasa 0%. Cuanto mayor sea el valor de las criptomonedas que ofrezcas en garantía menor será la tasa de interés a pagar. Podés usar la calculadora de simulación de préstamos en este sitio web y calcular la tasa de interés que pagarías en tu préstamo.
                                 </small>
                             </div>
                         </div>

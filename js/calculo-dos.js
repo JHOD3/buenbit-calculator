@@ -1,5 +1,5 @@
 function leerArchivo(callback) {
-    var url = "../calculo-dos.xlsm";
+    var url = "../calculadoraBB-2/calculo-dos.xlsm";
     var oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
     oReq.responseType = "arraybuffer";
@@ -24,10 +24,7 @@ function leerArchivo(callback) {
     }
     oReq.send();
 }
-const formatterPeso = new Intl.NumberFormat(['ban', 'id'], {
-    style: 'currency',
-    currency: 'ARG'
-});
+const formatterPeso = new Intl.NumberFormat(['ban', 'id']);
 const formatterNumero = new Intl.NumberFormat(['ban', 'id']);
 
 $('input').on('change keyup click', function (event) {
@@ -341,14 +338,14 @@ $('input').on('change keyup click', function (event) {
         let B53 = -(B47); // Buenbit intereses ganados por prestamo
 
        // console.log(B20,B21,B22,B23,B24,B25)
-        $('.monto_solicitado').text(formatterPeso.format(B3.toFixed(2)));
-        $('input[name="monto_solicitado"]').val(formatterPeso.format(B3.toFixed(2)));
+        $('.monto_solicitado').text('AR$ '+formatterPeso.format(B3.toFixed(2)));
+        $('input[name="monto_solicitado"]').val('AR$ '+formatterPeso.format(B3.toFixed(2)));
 
         $('.cuotas').text(B4);
         $('input[name="cuotas"]').val(B4);
 
-        $('.cuotas_inicial_con_iva').text( formatterPeso.format(B21.toFixed(2)));
-        $('input[name="cuotas_inicial_con_iva"]').val(formatterPeso.format(B21.toFixed(2)));
+        $('.cuotas_inicial_con_iva').text( 'AR$ '+formatterPeso.format(B21.toFixed(2)));
+        $('input[name="cuotas_inicial_con_iva"]').val('AR$ '+formatterPeso.format(B21.toFixed(2)));
 
         $('.garantia_en_cripto').text(formatterNumero.format(B20.toFixed(2)));
         $('input[name="garantia_en_cripto"]').val(formatterNumero.format(B20.toFixed(2)));
@@ -356,8 +353,8 @@ $('input').on('change keyup click', function (event) {
         $('.interes').text((B24*100).toFixed(2)+'%');
         $('input[name="interes"]').val((B24*100).toFixed(2)+'%');
 
-        $('.monto_total_cancelar').text(formatterPeso.format(B17.toFixed(2)));
-        $('input[name="monto_total_cancelar"]').val(formatterPeso.format(B17.toFixed(2)));
+        $('.monto_total_cancelar').text('AR$ '+formatterPeso.format(B17.toFixed(2)));
+        $('input[name="monto_total_cancelar"]').val('AR$ '+formatterPeso.format(B17.toFixed(2)));
 
         $('.garantia').text(B20.toFixed(2));
     });

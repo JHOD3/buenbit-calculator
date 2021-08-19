@@ -34,15 +34,11 @@
             </div>
             <!-- Navbar links-->
             <ul class="nav navbar-nav nav-flex-icons ml-auto d-md-flex d-none">
-                <li class="nav-item align-items-center d-flex">
-                    <a class="nav-link text-primary font-weight-normal"><span class="clearfix d-none d-sm-inline-block">Descargá la app</span></a>
-                </li>
-                <li class="nav-item mx-md-3">
-                    <a class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Ingresar</span></a>
-                </li>
+                <li class="nav-item mx-md-3"><a href="https://app.buenbit.com/registro"
+                                                class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span
+                                class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a></li>
+                <li class="nav-item"><a href="https://app.buenbit.com/" class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span
+                                class="clearfix d-none d-sm-inline-block">Ingresar</span></a></li>
             </ul>
             <!-- Navbar links-->
         </div>
@@ -95,7 +91,7 @@
                             <div class="border-bottom pb-5">
                                 <p class="text-center mt-3">
                                     <span class="font-weight-bold">Paso 2.</span>
-                                    Elegí en cuantas cuotas <br class="d-md-none d-block"> lo querés devolver.
+                                    Elegí en cuántas cuotas <br class="d-md-none d-block"> lo querés devolver.
                                 </p>
                                 <div class="justify-content-center d-flex">
                                     <div data-toggle="buttons">
@@ -114,6 +110,22 @@
                                         <label class="btn btn-info active btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.0" checked="" /> 0% </label>
                                         <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.25" /> 25% </label>
                                         <label class="btn btn-info btn-rounded btn-p font-20 py-md-2"> <input class="porcentaje" type="radio" name="porcentaje" autocomplete="off" value="0.50" /> 50% </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom">
+                            <div class="pb-5">
+                                <div class="d-flex text-center justify-content-center align-items-center pt-md-5">
+                                    <p class="text-center mb-0">
+                                        Cuota mensual
+                                    </p>
+                                </div>
+                                <p class="text-center "></p>
+                                <div class="text-center">
+                                    <div>
+                                        <div class="col-md-6 justify-content-center d-flex align-items-center mx-md-auto">
+                                            <span class="font-30 text-primary cuotas_inicial_con_iva">0</span></div>
                                     </div>
                                 </div>
                             </div>

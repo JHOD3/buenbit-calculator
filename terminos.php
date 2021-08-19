@@ -34,9 +34,11 @@
             </div>
             <!-- Navbar links-->
             <ul class="nav navbar-nav nav-flex-icons ml-auto d-md-flex d-none">
-                <li class="nav-item align-items-center d-flex"><a class="nav-link text-primary font-weight-bold"><span class="clearfix d-none d-sm-inline-block">Descargá la app</span></a></li>
-                <li class="nav-item mx-md-3"><a class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a></li>
-                <li class="nav-item"><a class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span class="clearfix d-none d-sm-inline-block">Ingresar</span></a></li>
+                <li class="nav-item mx-md-3"><a href="https://app.buenbit.com/registro"
+                                                class="nav-link btn btn-rounded btn-outline-primary btn-lg px-4 py-2"><span
+                                class="clearfix d-none d-sm-inline-block">Crear cuenta</span></a></li>
+                <li class="nav-item"><a href="https://app.buenbit.com/" class="nav-link btn btn-rounded btn-primary btn-lg px-4 py-2"><span
+                                class="clearfix d-none d-sm-inline-block">Ingresar</span></a></li>
             </ul>
             <!-- Navbar links-->
         </div>
