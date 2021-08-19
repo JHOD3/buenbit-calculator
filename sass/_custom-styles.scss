@@ -4,6 +4,17 @@
       font-size: $i + px !important;
     }
 }
+@for $i from 8 through 80 {
+    .line-#{$i} {
+        line-height: $i + px !important;
+    }
+}
+
+@for $i from 8 through 80 {
+    .padding-#{$i}-bb {
+        padding: $i + px !important;
+    }
+}
 body{
     font-size: 1rem;
     color:#211748;
@@ -130,19 +141,58 @@ input[type=number]::-webkit-outer-spin-button {
 .m-acordion-content{
     margin: .5rem 0rem 2.5rem 0rem;
 }
+.img-background-home{
+    content: '';
+    background-image: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 500px;
+}
+.img-background-simulador{
+    content: "";
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    height: 1800px;
+}
+.md-footer-simulador-m-top{
+    margin-top: -123px
+}
+.border-radius-card{
+    border-radius: 10px !important;
+}
 @media (max-width: 768px){
+    .img-gracias{
+        transform: scale(1) !important;
+        height: 590px !important;
+        position: absolute;
+        left: -200px;
+        top: -260px;
+        width: 433px !important;
+    }
+    .md-footer-simulador-m-top{
+        margin-top: -64px;
+    }
+    .img-background-simulador{
+        background-image: url("../img/5.png");
+    }
     .iconos-footer {
         width: 2rem;
         height: 2rem;
     }
+    .mb-form-simulador{
+        margin-bottom: 4rem;
+    }
     .footer-background-home {
-        height: 318px;
+        height: 380px;
         background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
         background-image: linear-gradient(
                         0deg
                 , #3581fa 0%, #3581fa 100%);
         -webkit-clip-path: ellipse(200% 71% at 50.5% 150%);
-        clip-path: ellipse(102% 61% at 50.5% 57%);
+        clip-path: ellipse(120% 61% at 50.5% 75%);
         z-index: -1;
     }
 
@@ -171,6 +221,11 @@ input[type=number]::-webkit-outer-spin-button {
     @for $i from 8 through 80 {
         .font-#{$i}-m {
             font-size: $i + px !important;
+        }
+    }
+    @for $i from 8 through 80 {
+        .line-#{$i}-m {
+            line-height: $i + px !important;
         }
     }
 }

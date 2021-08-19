@@ -249,8 +249,9 @@ $navbar-dark-disabled-color                  : rgba(255, 255, 255, .5) !default;
 
 $navbar-scrolling-transition                 : background .5s ease-in-out, padding .5s ease-in-out !default;
 $navbar-scrolling-transition-duration        : 1s !default;
-$navbar-scrolling-padding                    : 12px !default;
-$navbar-top-collapse-padding                 : 5px !default;
+$navbar-scrolling-padding                    : 2rem !default;
+$navbar-top-collapse-padding                 : 12px !default;
+$navbar-bottom-collapse-padding              : 20px !default;
 $navbar-nav-transition                       : .35s !default;
 $navbar-dropdown-font-size                   : .9375rem !default;
 $navbar-dropdown-menu-padding                : 10px !default;

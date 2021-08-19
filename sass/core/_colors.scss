@@ -284,6 +284,9 @@ $grey-darken-2:   #616161 !default;
 $grey-darken-3:   #424242 !default;
 $grey-darken-4:   #212121 !default;
 
+$bb-text-color:   #6C819F !default;
+
+
 $black-base: #000 !default;
 $white-base: #fff !default;
 $foggy-grey: #4f4f4f !default;
@@ -291,6 +294,9 @@ $foggy-grey: #4f4f4f !default;
 $mdb-colors-1: () !default;
 $mdb-colors-1: map-merge(
   (
+    "bb-color":(
+        "base":$bb-text-color
+    ),
     "mdb-color": (
       "lighten-5":  $mdb-color-lighten-5,
       "lighten-4":  $mdb-color-lighten-4,
@@ -660,7 +666,6 @@ $material-colors: map-merge(
     "danger-color":         $danger-color,
     "danger-color-dark":    $danger-color-dark,
     "elegant-color":        $elegant-color,
-    "elegant-color-dark":   $elegant-color-dark,
     "stylish-color":        $stylish-color,
     "stylish-color-dark":   $stylish-color-dark,
     "unique-color":         $unique-color,
