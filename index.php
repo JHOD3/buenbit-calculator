@@ -176,7 +176,7 @@
                                 <p class="font-14">Dejá tus criptomonedas estables como <br> garantía y llevate pesos.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 my-4 my-md-3">
+                        <div class="col-md-4 my-4 my-md-0">
                             <div>
                                 <img src="img/icono12.svg" alt="">
                             </div>
@@ -204,7 +204,7 @@
             <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal font-35">Préstamos</h3>
+                    <h3 class="font-weight-500 font-35">Préstamos</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist"
@@ -361,7 +361,7 @@
             <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal font-35">Garantías</h3>
+                    <h3 class="font-weight-500 font-35">Garantías</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist"
@@ -467,7 +467,7 @@
             <div class="row mt-5 pt-md-4">
                 <div class="col-md-4">
                     <small>FAQs</small>
-                    <h3 class="font-weight-normal font-35">Cuotas</h3>
+                    <h3 class="font-weight-500 font-35">Cuotas</h3>
                 </div>
                 <div class="col-md-8">
                     <div class="accordion md-accordion" id="accordion-progress" role="tablist"
