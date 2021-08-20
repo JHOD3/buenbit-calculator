@@ -149,7 +149,7 @@
                             <div>
                                 <img src="img/icono10.svg" class="ml-md-auto d-block" alt="">
                             </div>
-                            <div class="font-weight-bold font-20 text-md-right py-md-3 py-3">Cancelalo cuando quieras</div>
+                            <div class="font-weight-bold font-20 text-md-right py-md-3 py-3">¡Al toque!</div>
                             <div class="text-md-right">
                                 <p>Podés cancelar tu préstamo en <br> cualquier momento antes del <br> vencimiento.</p>
                             </div>
