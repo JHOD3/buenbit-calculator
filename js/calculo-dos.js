@@ -261,6 +261,8 @@ $('input').on('change keyup click', function (event) {
                     let M15 = M11 + M13;
                     // Deuda mes 1
                     M10 = (L10 - M11 >= 0) ? L10 - M11 : 0;
+                    B16 = B16 + M14;
+                    B17 = B17 + M15;
                     B24 = B24 + M13;
                     break;
                 case 12:
@@ -276,6 +278,8 @@ $('input').on('change keyup click', function (event) {
                     let N15 = N11 + N13;
                     // Deuda mes 1
                     N10 = (M10 - N11 >= 0) ? M10 - N11 : 0;
+                    B16 = B16 + N14;
+                    B17 = B17 + N15;
                     B24 = B24 + N13;
                     break;
             }
@@ -308,11 +312,11 @@ $('input').on('change keyup click', function (event) {
                 break;
             case 12:
                 if(B5 == 0.0){
-                    B25 = 0.210937500;
+                    B25 = 0.262135922;
                 }else if(B5 == 0.25){
-                    B25 = 0.244490596;
+                    B25 = 0.329588097;
                 }else{
-                    B25 = 0.294688012;
+                    B25 = 0.454953023;
                 }
                 break;
         }
