@@ -61,5 +61,6 @@ $('.view_input_set').on('click', function (event) {
 
 $('.simular_prestamo').on('click', function (event) {
     localStorage.setItem("amount", $('#ex13').val());
-    location.href='simulador.php';
+    location.href='simulador.html';
 });
+
