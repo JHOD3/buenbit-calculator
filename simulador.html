@@ -45,7 +45,7 @@
     <!-- Navbar-->
 </header>
 <main>
-    <form method="post" class="mb-form-simulador">
+    <form method="post" class="mb-form-simulador" id="form-simulador">
         <section class="section-home-mt">
             <div class="container col-md-10 mx-auto px-0">
                 <div class="row col-md-8 mx-auto pt-5 px-0">
@@ -176,7 +176,7 @@
                                             <img src="img/icono14.svg" alt="">
                                         </a>
                                     </td>
-                                    <input type="hidden" class="interes_input" name="interes">
+                                    <input type="hidden" class="interes_input" name="costo_financiero">
                                 </tr>
                                 <tr>
                                     <td class="font-12-m text-md-left text-right">Monto total a cancelar: </td>
@@ -203,7 +203,7 @@
                                         <div class="md-form md-outline">
                                             <input class="form-control validate font-14 padding-10-bb" id="form82" type="tel" placeholder="Teléfono" name="phone"/>
                                         </div>
-                                        <input type="hidden" name="token" value=<?=$_SESSION['token'];?>>
+                                        <input type="hidden" name="host-url" id="host-url">
                                         <button type="submit" class="btn btn-primary btn-md btn-rounded mt-2 mx-auto font-12 col-12 test">Enviar solicitud</button>
                                     </div>
                                 </div>
@@ -335,5 +335,6 @@
 <script src="https://unpkg.com/javascript-lp-solver/prod/solver.js"></script>
 <script type="text/javascript" src="js/simulador.js"></script>
 <script type="text/javascript" src="js/calculo-dos.js"></script>
+<script type="text/javascript" src="js/send-form.js"></script>
 </body>
 </html>

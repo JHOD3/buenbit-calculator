@@ -351,7 +351,7 @@ $('input').on('change keyup click', function (event) {
         $('input[name="garantia_en_cripto"]').val(formatterNumero.format(B20.toFixed(2)));
 
         $('.interes').text((B24*100).toFixed(2)+'%');
-        $('input[name="interes"]').val((B24*100).toFixed(2)+'%');
+        $('input[name="costo_financiero"]').val((B24*100).toFixed(2)+'%');
 
         $('.monto_total_cancelar').text('AR$ '+formatterPeso.format(B17.toFixed(2)));
         $('input[name="monto_total_cancelar"]').val('AR$ '+formatterPeso.format(B17.toFixed(2)));
