@@ -1,7 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
-  <g id="Grupo_420" data-name="Grupo 420" transform="translate(-510.828 -522.119)">
-    <circle id="Elipse_57" data-name="Elipse 57" cx="24" cy="24" r="24" transform="translate(511.328 522.619)" fill="#e9f0f9" stroke="#e3e9f4" stroke-miterlimit="10" stroke-width="1"/>
-    <rect id="Rectángulo_58" data-name="Rectángulo 58" width="19.5" height="19.5" rx="9.75" transform="translate(525.578 536.869)" fill="none" stroke="#005fff" stroke-miterlimit="10" stroke-width="1"/>
-    <text id="_" data-name="%" transform="translate(530.756 551.103)" fill="#6ea9ff" font-size="11.828" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">%</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="29.74" height="28.608" viewBox="0 0 29.74 28.608">
+  <g id="Grupo_460" data-name="Grupo 460" transform="translate(-922.137 -704.556)">
+    <g id="Grupo_460-2" data-name="Grupo 460" transform="translate(922.137 726.564)" opacity="0.4" style="isolation: isolate">
+      <path id="Trazado_307" data-name="Trazado 307" d="M934.169,721.42h-10.9a1.13,1.13,0,0,1,0-2.26h10.9a1.13,1.13,0,0,1,0,2.26Z" transform="translate(-922.137 -719.16)" fill="#0765f0"/>
+    </g>
+    <g id="Grupo_461" data-name="Grupo 461" transform="translate(940.935 722.224)">
+      <path id="Trazado_308" data-name="Trazado 308" d="M940.083,727.221a5.47,5.47,0,1,1,5.47-5.47A5.477,5.477,0,0,1,940.083,727.221Zm0-8.68a3.21,3.21,0,1,0,3.21,3.21A3.214,3.214,0,0,0,940.083,718.54Z" transform="translate(-934.611 -716.28)" fill="#0765f0"/>
+    </g>
+    <g id="Grupo_462" data-name="Grupo 462" transform="translate(938.714 708.896)" opacity="0.4" style="isolation: isolate">
+      <path id="Trazado_309" data-name="Trazado 309" d="M945.17,709.7h-10.9a1.13,1.13,0,1,1,0-2.26h10.9a1.13,1.13,0,0,1,0,2.26Z" transform="translate(-933.137 -707.436)" fill="#0765f0"/>
+    </g>
+    <g id="Grupo_463" data-name="Grupo 463" transform="translate(922.137 704.556)">
+      <path id="Trazado_310" data-name="Trazado 310" d="M927.607,715.5a5.47,5.47,0,1,1,5.469-5.469A5.474,5.474,0,0,1,927.607,715.5Zm0-8.679a3.209,3.209,0,1,0,3.208,3.21A3.212,3.212,0,0,0,927.607,706.817Z" transform="translate(-922.137 -704.556)" fill="#0765f0"/>
+    </g>
   </g>
 </svg>

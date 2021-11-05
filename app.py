@@ -24,7 +24,8 @@ def sendmail():
         "cuotas_inicial_con_iva":request.json['cuotas_inicial_con_iva'],
         "garantia_en_cripto":request.json['garantia_en_cripto'],
         "costo_financiero": request.json['costo_financiero'] ,
-        "monto_total_cancelar": request.json['monto_total_cancelar']
+        "monto_total_cancelar": request.json['monto_total_cancelar'],
+        "razon": request.json['razon']
     }
 
     message.template_id = 'colocar aqui el template ID de sendgrid'

@@ -10022,8 +10022,9 @@ table.table thead th {
 }
 table.table th,
 table.table td {
-  padding-top: 1.1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
 }
 table.table a {
   margin: 0;
@@ -12599,6 +12600,10 @@ table.table a.btn.btn-whatsapp {
   }
 }
 @media (max-width: 768px) {
+  .double-nav {
+    padding-top: 33px;
+    padding-bottom: 4px;
+  }
   .double-nav .container {
     padding-right: 0;
     padding-left: 0;
@@ -14277,6 +14282,9 @@ label.btn input[type=checkbox]:disabled:checked + label:after {
 
 select {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 20px !important;
+  background: #edeeef !important;
+  border: none !important;
 }
 select.mdb-select {
   display: none !important;
@@ -23806,11 +23814,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-background-home {
-  height: 441px;
+  height: 500px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
   background-image: linear-gradient(0deg, #3581fa 0%, #3581fa 100%);
   -webkit-clip-path: ellipse(80% 61% at 50.5% 66%);
-  clip-path: ellipse(80% 61% at 50.5% 66%);
+  clip-path: ellipse(80% 43% at 50.5% 70%);
   z-index: -1;
 }
 
@@ -23891,9 +23899,20 @@ input[type=number]::-webkit-outer-spin-button {
   content: "";
   background-image: url("../img/2.png");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
+  background-position-x: 158%;
+  background-position-y: 76%;
+  background-size: 72%;
   height: 500px;
+}
+
+.img-background-home-6 {
+  content: "";
+  background-image: url("../img/6.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 202px;
+  background-size: 45%;
+  height: 425px;
 }
 
 .img-background-simulador {
@@ -23914,14 +23933,50 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 768px) {
+  .logo-m{
+    width: 90%;
+  }
+  .md-accordion .card .card-header {
+    padding: 1rem 1.5rem 1rem 0rem;
+    background: transparent;
+    border-bottom: 0;
+  }
+  .navbar.scrolling-navbar.top-nav-collapse {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background: white;
+  }
+  .img-background-home-6 {
+    background-size: 160%;
+    background-position-y: 191px;
+    height: 385px;
+  }
+  .img-background-home-7 {
+    content: "";
+    background-image: url("../img/7.svg");
+    background-repeat: no-repeat;
+    background-position-x: 144%;
+    background-position-y: 202px;
+    background-size: 55%;
+
+  }
   .img-gracias {
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
-    height: 590px !important;
+    -webkit-transform: scale(.5) !important;
+            transform: scale(.5) !important;
+    height: 701px !important;
     position: absolute;
-    left: -200px;
-    top: -260px;
-    width: 433px !important;
+    left: -215px;
+    top: -349px;
+    width: 445px !important;
+  }
+  .img-background-home {
+    content: "";
+    background-image: url('../img/2.png');
+    background-repeat: no-repeat;
+    background-position-x: -40%;
+    background-position-y: 76%;
+    background-size: 145%;
+    height: 500px;
   }
 
   .md-footer-simulador-m-top {
@@ -23942,11 +23997,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .footer-background-home {
-    height: 380px;
+    height: 400px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#3581fa), to(#3581fa));
     background-image: linear-gradient(0deg, #3581fa 0%, #3581fa 100%);
     -webkit-clip-path: ellipse(200% 71% at 50.5% 150%);
-    clip-path: ellipse(120% 61% at 50.5% 75%);
+    clip-path: ellipse(113% 42% at 50.5% 75%);
     z-index: -1;
   }
 
@@ -23967,7 +24022,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .section-home-mt {
-    margin-top: 60px;
+    margin-top: 71px;
   }
 
   .img-gracias {
